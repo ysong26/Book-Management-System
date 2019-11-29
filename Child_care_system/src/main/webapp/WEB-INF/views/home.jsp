@@ -15,6 +15,7 @@
 <P>  The time on the server is ${serverTime}. </P>
 
 수정테스트입니다.
-1번테스트
+1번테스트입니다
+2번 테스트입니다
 </body>
 </html>
