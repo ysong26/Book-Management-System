@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/basic/*")
 public class TestController {
-
+ 
 	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 	
 	
