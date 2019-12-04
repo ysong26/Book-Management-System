@@ -101,7 +101,7 @@
                 <td width="5%" align="center">*</td>
                 <td width="15%">이메일
                 
-                <input type="email" name="wUserEmail" /></td>
+                <input type="email" name="User_E_mail" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
