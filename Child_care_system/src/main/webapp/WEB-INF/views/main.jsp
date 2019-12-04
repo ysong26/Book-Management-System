@@ -24,8 +24,7 @@
 							<ul>
 								<li class="current"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;</a>
 									<ul>
-										<li><a href="about.jsp">Our Story</a></li>
-									
+										<li><a href="basic/About">Our Story</a></li>
 									</ul>
 								</li>
 								
@@ -60,39 +59,37 @@
 				<section id="banner">
 					<header>
 						<h2><em>우리아이 안심 귀가 서비스</em></h2>
-						<a href="여기수정.jps" class="button">Submit</a>
+						<a href="basic/SingUp1" class="button">Submit</a>
 					</header>
 				</section>
 			</div>							
-
-
 
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
 						<div class="row">
 							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Links to Stuff</h3>
+								<h3>Notice</h3>
 								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
+									<li><a href="#">2019-12-03 서버 임시 오픈 공지</a></li>
+									<li><a href="#">서비스 오픈 안내 관련 공지</a></li>
+									<li><a href="#">시스템 오류 관련하여 공지</a></li>
+									<li><a href="#">어린이 등·하원 관리 문의사항</a></li>
+									<li><a href="#">테스트 공지입니다.</a></li>
+									<li><a href="#">홈페이지 오류 수정··</a></li>
+									<li><a href="#">VITA500 홈페이지 개설···</a></li>
 								</ul>
 							</section>
 							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>More Links to Stuff</h3>
+								<h3>History</h3>
 								<ul class="links">
-									<li><a href="#">Duis neque nisi dapibus</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan sed</a></li>
-									<li><a href="#">Mattis et sed accumsan</a></li>
-									<li><a href="#">Duis neque nisi sed</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum amet varius</a></li>
+									<li><a href="#">2019-12-03 입금자 내역</a></li>
+									<li><a href="#">2019-12-02 입금자 내역</a></li>
+									<li><a href="#">11월 미확인 입금자</a></li>
+									<li><a href="#">2019-11-29 입금자 내역</a></li>
+									<li><a href="#">2019-11-28 입금자 내역</a></li>
+									<li><a href="#">2019-11-27 입금자 내역</a></li>
+									<li><a href="#">2019-11-26 입금자 내역</a></li>
 								</ul>
 							</section>
 							<section class="col-6 col-12-narrower">
@@ -108,7 +105,7 @@
 
 										<div class="col-12">
 											<ul class="actions">
-												<li><input type="submit" class="button alt" value="로그인" /></li>
+												<li><input type="submit" class="button alt" id="" value="로그인" /></li>
 												<li><input type="submit" class="button alt" value="ID/PW찾기" /></li>
 											</ul>
 										</div>
@@ -135,8 +132,6 @@
 						</div>
 
 				</div>
-
-		</div>
 
 		<!-- Scripts -->
 			<script src="/resources/assets/js/jquery.min.js"></script>
