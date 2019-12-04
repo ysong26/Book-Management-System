@@ -43,7 +43,7 @@
             <tr class="register" height="30">
                 <td align="center">*</td>
                 <td width="50%">회원 ID
-                <input type="text" name="wUserID" style="text-align:center; width:200px; height:50px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:id_check()">[ID 중복 검사]</a></td>
+                <input type="text" name="User_ID" style="text-align:center; width:200px; height:50px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:id_check()">[ID 중복 검사]</a></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -51,7 +51,7 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">비밀번호
-                <input type="password" name="wUserPW" id="pw" style="text-align:center; width:200px; height:50px;" onchange="isSame()" /></td>
+                <input type="password" name="User_PW" id="pw" style="text-align:center; width:200px; height:50px;" onchange="isSame()" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -59,40 +59,22 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">비밀번호 확인
-                <input type="password" name="wUserPWConfirm" id="pwCheck" style="text-align:center; width:200px; height:50px;" onchange="isSame()" />&nbsp;&nbsp;<span id="same"></span></td>
+                <input type="password" name="UserPW_Confirm" id="pwCheck" style="text-align:center; width:200px; height:50px;" onchange="isSame()" />&nbsp;&nbsp;<span id="same"></span></td>
             </tr>
-            <tr height="7">
-                <td colspan="3"><hr /></td>
-            </tr>
+
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">이 름
-              <input type="text" name="wUserName" style="text-align:center; width:200px; height:50px;"/></td>
+              <input type="text" name="User_P_Name" style="text-align:center; width:200px; height:50px;"/></td>
             </tr>
-            <tr height="7">
-                <td colspan="3"><hr /></td>
-            </tr>
-            <tr class="register" height="30">
-                <td width="5%" align="center">*</td>
-                <td width="15%">성 별<br><br>
-                    남 성<input type="radio" name="wUserGender" value="1" checked />&nbsp;여 성<input type="radio" name="wUserGender" value="2"/>
-                </td>
-            </tr>
-            <tr height="7">
-                <td colspan="3"><hr /></td>
-            </tr>
-            <tr class="register" height="30">
-                <td width="5%" align="center">*</td>
-                <td width="15%">집전화<br>
-                <input type="tel" name="wUserHomePhone"  style="text-align:center; width:200px; height:50px;" /></td>
-            </tr>
+
             <tr height="7">
                 <td colspan="3"><hr /></td>
             </tr>
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">휴대전화<br>
-                <input type="tel" name="wUserCellPhone" style="text-align:center; width:200px; height:50px;" /></td>
+                <input type="tel" name="User_P_CPN"  style="text-align:center; width:200px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -106,6 +88,39 @@
             <tr height="7">
                 <td colspan="3"><hr /></td>
             </tr>
+  			
+
+
+
+ 
+             <tr height="7">
+                <td colspan="3"><hr /></td>
+            </tr>
+            
+            <tr>
+                <td><b>[아이]</b></td>
+            </tr>
+            
+            <tr class="register" height="30">
+                <td width="5%" align="center">*</td>
+                <td width="15%"><br>아이이름
+              <input type="text" name="User_P_Name" style="text-align:center; width:200px; height:50px;"/></td>
+            </tr>
+ 
+ 
+             <tr height="7">
+                <td colspan="3"><hr /></td>
+            </tr>
+            <tr class="register" height="30">
+                <td width="5%" align="center">*</td>
+                <td width="15%">아이성별<br><br>
+                    남 <input type="radio" name="K_Gender" value="1" checked />&nbsp;여 <input type="radio" name="wUserGender" value="2"/>
+                </td>
+            </tr>
+ 
+ 
+ 
+ 
  
         </table>
         <br />
