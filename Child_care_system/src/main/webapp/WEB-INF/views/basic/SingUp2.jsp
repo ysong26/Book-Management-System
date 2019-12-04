@@ -18,7 +18,7 @@
 
 					<!-- Logo -->
 						<h1><a href="/" id="logo">VITA <em>500</em></a></h1>
-
+ 
 			</div>
 	</div>				
 
