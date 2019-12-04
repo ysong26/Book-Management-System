@@ -19,9 +19,21 @@ public class TestController {
 		}
 		
 		@RequestMapping("SingUp1")
-		public String Sing() {
+		public String Sing1() {
 			
 			return "basic/SingUp1";
+		}
+		
+		@RequestMapping("SingUp2")
+		public String Sing2() {
+			
+			return "basic/SingUp2";
+		}
+		
+		@RequestMapping("SingUp3")
+		public String Sing3() {
+			
+			return "basic/SingUp3";
 		}
 	}	
 

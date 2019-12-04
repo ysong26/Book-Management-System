@@ -34,44 +34,47 @@
 	<h3>회원가입 정보 작성</h3>
 
     <form action="?" method="post" name="?">
-   
-        <table style="border-collapse:collapse; font-size:9pt;">
-            <tr class="register">
-                <td>*</td>
-                <td>회원 ID</td>
-                <td><input type="text" name="wUserID" />&nbsp;<a href="javascript:id_check()">[ID 중복 검사]</a></td>
+        <table>
+            <tr>
+                <td><b>[회원가입]</b></td>
             </tr>
-            <tr height="7">
-                <td colspan="3"><hr /></td>
-            </tr>
+        </table>    
+        <table>
             <tr class="register" height="30">
-                <td>*</td>
-                <td>비밀번호</td>
-                <td><input type="password" name="wUserPW" id="pw" onchange="isSame()" /></td>
-            </tr>
-            <tr height="7">
-                <td colspan="3"><hr /></td>
-            </tr>
-            <tr class="register" height="30">
-                <td width="5%" align="center">*</td>
-                <td width="15%">비밀번호 확인</td>
-                <td><input type="password" name="wUserPWConfirm" id="pwCheck" onchange="isSame()" />&nbsp;&nbsp;<span id="same"></span></td>
+                <td align="center">*</td>
+                <td width="50%">회원 ID
+                <input type="text" name="wUserID" style="text-align:center; width:200px; height:50px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:id_check()">[ID 중복 검사]</a></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
             </tr>
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">이 름</td>
-                <td><input type="text" name="wUserName" /></td>
+                <td width="15%">비밀번호
+                <input type="password" name="wUserPW" id="pw" style="text-align:center; width:200px; height:50px;" onchange="isSame()" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
             </tr>
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">성 별</td>
-                <td>
+                <td width="15%">비밀번호 확인
+                <input type="password" name="wUserPWConfirm" id="pwCheck" style="text-align:center; width:200px; height:50px;" onchange="isSame()" />&nbsp;&nbsp;<span id="same"></span></td>
+            </tr>
+            <tr height="7">
+                <td colspan="3"><hr /></td>
+            </tr>
+            <tr class="register" height="30">
+                <td width="5%" align="center">*</td>
+                <td width="15%">이 름
+              <input type="text" name="wUserName" style="text-align:center; width:200px; height:50px;"/></td>
+            </tr>
+            <tr height="7">
+                <td colspan="3"><hr /></td>
+            </tr>
+            <tr class="register" height="30">
+                <td width="5%" align="center">*</td>
+                <td width="15%">성 별<br><br>
                     남 성<input type="radio" name="wUserGender" value="1" checked />&nbsp;여 성<input type="radio" name="wUserGender" value="2"/>
                 </td>
             </tr>
@@ -80,75 +83,47 @@
             </tr>
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">집전화</td>
-                <td><input type="tel" name="wUserHomePhone" /></td>
+                <td width="15%">집전화<br>
+                <input type="tel" name="wUserHomePhone"  style="text-align:center; width:200px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
             </tr>
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">휴대전화</td>
-                <td><input type="tel" name="wUserCellPhone" /></td>
+                <td width="15%">휴대전화<br>
+                <input type="tel" name="wUserCellPhone" style="text-align:center; width:200px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
             </tr>
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">이메일</td>
-                <td><input type="email" name="wUserEmail" /></td>
+                <td width="15%">이메일
+                
+                <input type="email" name="wUserEmail" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
-            </tr>
-            <tr>
-                <td width="5%" align="center">*</td>
-                <td width="15%">주 소</td>
-                <td>
-                    <input type="text" size="10" name="wPostCode" id="postcode" placeholder="우편번호" readonly="readonly" onclick="DaumPostcode()">
-                    <input type="button" onclick="DaumPostcode()" value="우편번호 찾기"><br><br />
-                    <input type="text" size="30" name="wRoadAddress" id="roadAddress" placeholder="도로명주소" readonly="readonly" onclick="DaumPostcode()">
-                    <input type="text" size="30" name="wJibunAddress" id="jibunAddress" placeholder="지번주소" readonly="readonly" onclick="DaumPostcode()">
-                    <br /><span id="guide" style="color:#999;font-size:10px;"></span>   
-                    <br /><br /><input type="text" name="wRestAddress" placeholder="나머지 주소" size="70" />
-                </td>
             </tr>
  
         </table>
         <br />
-        <table>
-            <tr height="40">
-                <td><input width="120" type="image" src="img/button/btn_join.png" />&nbsp;<a href="index.php"><img src="img/button/btn_cancel.png" width="120" /></a></td>
-            </tr>
-        </table>
     </form>
 
-
-
-
-
-
-
-
-
-
-   							  
-     							  
-									<p><input type="submit" value="취소">
-									<input type="submit" value="확인"></p>
-							</section>
-						</div>
-					</div>
-							
-					<!-- Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
-						</ul>
+					<p><input type="submit"  onclick="location.href='/'" value="취소">
+				<input type="submit"  onclick="location.href='SingUp3'" value="확인"></p>
+			</section>
+		</div>
+	</div>
+		<!-- Icons -->
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+			</ul>
 
 					<!-- Copyright -->
 						<div class="copyright">

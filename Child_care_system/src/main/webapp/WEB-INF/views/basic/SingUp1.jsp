@@ -107,8 +107,8 @@ Fax:031-224-3626
 	<input type="checkbox" id="바꾸라고" name="termsService" class="chk">이벤트 등 프로모션 알림 메일 수신(선택)
 </p>    							  
      							  
-									<p><input type="submit" value="취소">
-									<input type="submit" value="확인"></p>
+									<p><input type="submit"  value="취소">
+									<input type="submit" onclick="location.href='SingUp2'" value="확인"></p>
 									
 							</section>
 						</div>
