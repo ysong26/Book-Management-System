@@ -43,7 +43,7 @@
             <tr class="register" height="30">
                 <td align="center">*</td>
                 <td width="50%">회원 ID
-                <input type="text" name="User_ID" style="text-align:center; width:200px; height:50px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:id_check()">[ID 중복 검사]</a></td>
+                <input type="text" name="User_ID" placeholder="X자이내의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다." style="text-align:center; width:200px; height:50px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:id_check()">[ID 중복 검사]</a></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -65,7 +65,7 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">이 름
-              <input type="text" name="User_P_Name" style="text-align:center; width:200px; height:50px;"/></td>
+              <input type="text" name="User_P_Name" style="text-align:center; width:150px; height:50px;"/></td>
             </tr>
 
             <tr height="7">
@@ -74,7 +74,7 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">휴대전화<br>
-                <input type="tel" name="User_P_CPN"  style="text-align:center; width:200px; height:50px;" /></td>
+                <input type="tel" name="User_P_CPN"  style="text-align:center; width:250px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -83,44 +83,12 @@
                 <td width="5%" align="center">*</td>
                 <td width="15%">이메일
                 
-                <input type="email" name="User_E_mail" /></td>
+                <input type="email" name="User_E_mail" style="text-align:center; width:250px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
             </tr>
-  			
-
-
-
- 
-             <tr height="7">
-                <td colspan="3"><hr /></td>
-            </tr>
-            
-            <tr>
-                <td><b>[아이]</b></td>
-            </tr>
-            
-            <tr class="register" height="30">
-                <td width="5%" align="center">*</td>
-                <td width="15%"><br>아이이름
-              <input type="text" name="User_P_Name" style="text-align:center; width:200px; height:50px;"/></td>
-            </tr>
- 
- 
-             <tr height="7">
-                <td colspan="3"><hr /></td>
-            </tr>
-            <tr class="register" height="30">
-                <td width="5%" align="center">*</td>
-                <td width="15%">아이성별<br><br>
-                    남 <input type="radio" name="K_Gender" value="1" checked />&nbsp;여 <input type="radio" name="wUserGender" value="2"/>
-                </td>
-            </tr>
- 
- 
- 
- 
+  		
  
         </table>
         <br />

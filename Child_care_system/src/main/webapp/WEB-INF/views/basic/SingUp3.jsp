@@ -34,7 +34,6 @@
 	<h3>가입 완료</h3>
 				VITA500 회원으로 가입해 주셔서 감사합니다.<br>
 				메인으로 돌아가 로그인 후 서비스를 이용해주세요.<br>
-    
 					<p><input type="submit"  onclick="location.href='/'" value="메인으로"></p>
 			</section>
 		</div>

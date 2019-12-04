@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping("/basic/*")
-public class TestController {
+public class BasicController {
  
-	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
+	private static final Logger logger = LoggerFactory.getLogger(BasicController.class);
 	
 	
 		@RequestMapping(value="/About",method=RequestMethod.GET)

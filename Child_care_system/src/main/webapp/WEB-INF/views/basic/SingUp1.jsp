@@ -9,6 +9,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/resources/assets/css/main.css" />
+		 <script src="//code.jquery.com/jquery.js"></script>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -21,7 +22,9 @@
 
 			</div>
 	</div>				
-
+            <hr/>
+            
+            
 			<!-- Highlights -->
 				<section class="wrapper style1">
 					<div class="container">
@@ -56,23 +59,36 @@
 				<div id="footer">
 					<div class="container">
 						<div class="row">
+	<!--           여기까지 가입설명                          -->			
+							
 							
 							
 		<section class="off-4 col-12-narrower" >
-		
+
 	<h3>약관 및 동의</h3>
-<p><textarea cols="30" rows="5" placeholder="Disabled" disabled>여러분을 환영합니다.
+<textarea cols="30" rows="5" placeholder="Disabled" disabled>여러분을 환영합니다.
 VITA500 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다.
  본 약관은 다양한 VITA500 서비스의 이용과 관련하여 VITA500 서비스를 제공하는 VITA500 주식회사(이하 ‘VITA500’)와 이를 이용하는 VITA500 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 VITA500 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
 VITA500 서비스를 이용하시거나 네이버 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하게 되므로, 잠시 시간을 내시어 주의 깊게 살펴봐 주시기 바랍니다.
 VITA500은 https://github.com/ysong26/Child-care-systems을 비롯한 VITA500 도메인의 웹사이트 및 응용프로그램(어플리케이션, 앱)을 통해 정보 검색, 다른 이용자와의 커뮤니케이션, 콘텐츠 제공, 상품 쇼핑 등 여러분의 생활에 편리함을 더할 수 있는 다양한 서비스를 제공하고 있습니다.
 여러분은 PC, 휴대폰 등 인터넷 이용이 가능한 각종 단말기를 통해 각양각색의  VITA500 서비스를 자유롭게 이용하실 수 있으며, 개별 서비스들의 구체적인 내용은 각 서비스 상의 안내, 공지사항, VITA500 웹고객센터(이하 ‘고객센터’) 도움말 등에서 쉽게 확인하실 수 있습니다.
 </textarea><br>
-	<input type="checkbox" id="바꿔라" name="termsService" class="chk">VITA500 이용약관 동의(필수)
-</p>
-     							  
-     						
-<p><textarea cols="30" rows="5" placeholder="Disabled" disabled>여러분을 환영합니다.
+
+	<strong>VITA500 이용약관 동의(필수)</strong>
+	           <div class="radio">
+    <input type="radio" id="provision" name="provision" value="Y" autofocus="autofocus" checked>
+                동의합니다.
+             </div>
+                <div class="radio">
+    <input type="radio" id="provision" name="provision" value="N">
+        동의하지 않습니다.
+                    </div>				  
+     		<br>	
+     		
+     		
+     		
+     				
+<textarea cols="30" rows="5" placeholder="Disabled" disabled>여러분을 환영합니다.
 정보통신망법 규정에 따라 VITA500에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
 
 1. 수집하는 개인정보
@@ -84,8 +100,18 @@ VITA500은 https://github.com/ysong26/Child-care-systems을 비롯한 VITA500 �
 2) 이용자 기기의 고유한 정보를 원래의 값을 확인하지 못 하도록 안전하게 변환하여 수집합니다. 서비스 이용 과정에서 위치정보가 수집될 수 있으며,
  VITA500에서 제공하는 위치기반 서비스에 대해서는 ' VITA500 위치정보 이용약관'에서 자세하게 규정하고 있습니다.
 								   </textarea><br>
-	<input type="checkbox" id="바꾸라고" name="termsService" class="chk">개인정보 수집 및 이용에 대한 안내(필수)
-</p>
+								   
+								   
+	<strong>개인정보 수집 및 이용에 대한 안내(필수)</strong>
+	           <div class="radio">
+    <input type="radio" id="memberInfo" name="memberInfo" value="Y" autofocus="autofocus" checked>
+                동의합니다.
+             </div>
+                <div class="radio">
+    <input type="radio" id="memberInfo" name="memberInfo" value="N">
+        동의하지 않습니다.
+                    </div>				  
+     		<br>	
      							  
  <p><textarea cols="30" rows="5" placeholder="Disabled" disabled>여러분을 환영합니다.
 제 1 조 (목적)
@@ -104,11 +130,11 @@ Fax:031-224-3626
 부칙
 제1조 시행일
 2019년 12월 3일부터 시행되던 종전의 약관은 본 약관으로 대체하며, 본 약관은 2019년 12월 03일부터 적용됩니다.								   </textarea><br>
-	<input type="checkbox" id="바꾸라고" name="termsService" class="chk">이벤트 등 프로모션 알림 메일 수신(선택)
+	<input type="checkbox" id="termsService" name="termsService" class="chk">이벤트 등 프로모션 알림 메일 수신(선택)
 </p>    							  
      							  
-									<p><input type="submit"  value="취소">
-									<input type="submit" onclick="location.href='SingUp2'" value="확인"></p>
+		<p><input type="submit"  value="취소">
+		<input type="submit" onclick="location.href='SingUp2'" value="확인"></p>
 									
 							</section>
 						</div>
@@ -131,6 +157,39 @@ Fax:031-224-3626
 						</div>
 
 				</div>
+
+
+        <script>
+            $(function(){
+                var modalContents = $(".modal-contents");
+                var modal = $("#defaultModal");
+                 
+                $( "form" ).submit(function( event ) {
+                    
+                    var provision = $('#provision');
+                    var memberInfo = $('#memberInfo');
+                    
+                    //회원가입약관
+                    if($('#provision:checked' || '#memberInfo:checked').val()=="N"){
+                        modalContents.text("회원가입약관에 동의하여 주시기 바랍니다."); //모달 메시지 입력
+                        modal.modal('show'); //모달 띄우기
+                         
+                        provision.removeClass("has-success");
+                        provision.addClass("has-error");
+                        $('#provisionYn').focus();
+                        return false;
+                    }else{
+                        provision.removeClass("has-error");
+                        provision.addClass("has-success");
+                    }
+                });
+                
+            });
+        </script>
+
+
+
+
 
 		<!-- Scripts -->
 			<script src="/resources/assets/js/jquery.min.js"></script>
