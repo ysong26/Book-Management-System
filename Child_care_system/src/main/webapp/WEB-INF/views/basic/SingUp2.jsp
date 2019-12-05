@@ -29,11 +29,11 @@
 						<div class="row">
 							
 							
-		<section class="off-4 col-12-narrower" >
+<section class="off-1 col-12" >
 		
 	<h3>회원가입 정보 작성</h3>
 
-    <form action="?" method="post" name="?">
+   <form role="form" method="post">
         <table>
             <tr>
                 <td><b>[회원가입]</b></td>
@@ -74,7 +74,7 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">휴대전화 ('-'없이 번호만 입력해주세요.)<br>
-                <input type="tel" name="User_P_CPN"  style="text-align:center; width:250px; height:50px;" /></td>
+                <input type="text" name="User_P_CPN"  style="text-align:center; width:250px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -88,17 +88,20 @@
             <tr height="7">
                 <td colspan="3"><hr /></td>
             </tr>
-  		
- 
+  	
         </table>
         <br />
     </form>
-
-					<p><input type="submit"  onclick="location.href='/'" value="취소">
-				<input type="submit"  onclick="location.href='SingUp3'" value="확인"></p>
 			</section>
 		</div>
 	</div>
+	
+	
+	
+	<p><input type="submit"  class="" onclick="location.href='/'" value="취소">
+	<input type="submit"  onclick="location.href='SingUp3'" value="확인"></p>
+		
+		
 		<!-- Icons -->
 			<ul class="icons">
 				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
