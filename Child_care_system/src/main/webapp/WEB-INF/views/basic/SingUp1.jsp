@@ -10,6 +10,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/resources/assets/css/main.css" />
 		 <script src="//code.jquery.com/jquery.js"></script>
+		<script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/resources/bootstrap/js/respond.js"></script>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -74,18 +76,10 @@ VITA500은 https://github.com/ysong26/Child-care-systems을 비롯한 VITA500 �
 여러분은 PC, 휴대폰 등 인터넷 이용이 가능한 각종 단말기를 통해 각양각색의  VITA500 서비스를 자유롭게 이용하실 수 있으며, 개별 서비스들의 구체적인 내용은 각 서비스 상의 안내, 공지사항, VITA500 웹고객센터(이하 ‘고객센터’) 도움말 등에서 쉽게 확인하실 수 있습니다.
 </textarea><br>
 
-	<strong>VITA500 이용약관 동의(필수)</strong>
-	           <div class="radio">
-    <input type="radio" id="provision" name="provision" value="Y" autofocus="autofocus" checked>
-                동의합니다.
-             </div>
-                <div class="radio">
-    <input type="radio" id="provision" name="provision" value="N">
-        동의하지 않습니다.
-                    </div>				  
+		<p class="join_check">
+			<input id="useAgree" type="checkbox" class="MAL5">VITA500 이용약관 동의(필수)
+		</p>			  
      		<br>	
-     		
-     		
      		
      				
 <textarea cols="30" rows="5" placeholder="Disabled" disabled>여러분을 환영합니다.
@@ -102,15 +96,9 @@ VITA500은 https://github.com/ysong26/Child-care-systems을 비롯한 VITA500 �
 								   </textarea><br>
 								   
 								   
-	<strong>개인정보 수집 및 이용에 대한 안내(필수)</strong>
-	           <div class="radio">
-    <input type="radio" id="memberInfo" name="memberInfo" value="Y" autofocus="autofocus" checked>
-                동의합니다.
-             </div>
-                <div class="radio">
-    <input type="radio" id="memberInfo" name="memberInfo" value="N">
-        동의하지 않습니다.
-                    </div>				  
+	<p class="join_check">
+	<input id="priAgree" type="checkbox" class="MAL5">개인정보 수집 및 이용에 대한 안내(필수)
+	</p>		  
      		<br>	
      							  
  <p><textarea cols="30" rows="5" placeholder="Disabled" disabled>여러분을 환영합니다.
@@ -133,8 +121,8 @@ Fax:031-224-3626
 	<input type="checkbox" id="termsService" name="termsService" class="chk">이벤트 등 프로모션 알림 메일 수신(선택)
 </p>    							  
      							  
-		<p><input type="submit"  value="취소">
-		<input type="submit" onclick="location.href='SingUp2'" value="확인"></p>
+		<p><input type="submit" onclick="location.href='/'" value="취소">
+		<input type="submit" id="agreeBtn" value="확인"></p>
 									
 							</section>
 						</div>
@@ -160,31 +148,29 @@ Fax:031-224-3626
 
 
         <script>
-            $(function(){
-                var modalContents = $(".modal-contents");
-                var modal = $("#defaultModal");
-                 
-                $( "form" ).submit(function( event ) {
-                    
-                    var provision = $('#provision');
-                    var memberInfo = $('#memberInfo');
-                    
-                    //회원가입약관
-                    if($('#provision:checked' || '#memberInfo:checked').val()=="N"){
-                        modalContents.text("회원가입약관에 동의하여 주시기 바랍니다."); //모달 메시지 입력
-                        modal.modal('show'); //모달 띄우기
-                         
-                        provision.removeClass("has-success");
-                        provision.addClass("has-error");
-                        $('#provisionYn').focus();
-                        return false;
-                    }else{
-                        provision.removeClass("has-error");
-                        provision.addClass("has-success");
-                    }
-                });
-                
-            });
+        
+	    $(document).ready(function() {
+	    
+	    	
+	    	$('#agreeBtn').click(function(){
+	    		var chk1 = $('#useAgree').is(":checked");
+	    		var chk2 = $('#priAgree').is(":checked");
+	    		
+	    		if(!chk1){
+	    			alert("이용약관에 동의하셔야 가입이 가능합니다.");
+	    			$('#useAgree').focus();
+	    			return false;
+	    		}else if(!chk2){
+	    			alert("개인정보 수집·이용안내에 동의하셔야 가입이 가능합니다.");
+	    			$('#priAgree').focus();
+	    			return false;
+	    		}else{
+	    			location.replace('SingUp2'); 
+	    		}
+	    		
+	    		
+	    	});
+	    });	
         </script>
 
 

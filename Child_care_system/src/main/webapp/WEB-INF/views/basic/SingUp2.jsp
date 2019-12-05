@@ -73,7 +73,7 @@
             </tr>
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">휴대전화<br>
+                <td width="15%">휴대전화 ('-'없이 번호만 입력해주세요.)<br>
                 <input type="tel" name="User_P_CPN"  style="text-align:center; width:250px; height:50px;" /></td>
             </tr>
             <tr height="7">
