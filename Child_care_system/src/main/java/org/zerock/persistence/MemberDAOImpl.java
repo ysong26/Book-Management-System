@@ -16,7 +16,7 @@ public class MemberDAOImpl implements MemberDAO {
 	
 	@Override
 	public void singup(MemberVO vo) throws Exception {
-		session.insert(namespace+".create", vo);
+		session.insert(namespace+".singup", vo);
 		
 				}
 

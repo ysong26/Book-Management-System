@@ -65,7 +65,7 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">이 름
-              <input type="text" name="User_P_Name" style="text-align:center; width:150px; height:50px;"/></td>
+              <input type="text" name="User_Name" style="text-align:center; width:150px; height:50px;"/></td>
             </tr>
 
             <tr height="7">
@@ -74,7 +74,7 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">휴대전화 ('-'없이 번호만 입력해주세요.)<br>
-                <input type="text" name="User_P_CPN"  style="text-align:center; width:250px; height:50px;" /></td>
+                <input type="text" name="User_CPN"  style="text-align:center; width:250px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -83,7 +83,7 @@
                 <td width="5%" align="center">*</td>
                 <td width="15%">이메일
                 
-                <input type="email" name="User_E_mail" style="text-align:center; width:250px; height:50px;" /></td>
+                <input type="email" name="User_Email" style="text-align:center; width:250px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -99,7 +99,7 @@
 	
 	
 	<p><input type="submit"  class="" onclick="location.href='/'" value="취소">
-	<input type="submit"  onclick="location.href='SingUp3'" value="확인"></p>
+	<input type="submit"  class="btn-primary" value="확인"></p>
 		
 		
 		<!-- Icons -->
