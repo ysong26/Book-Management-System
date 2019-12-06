@@ -1,7 +1,7 @@
-package org.zerock.persistence;
+package vita500.persistence;
 
 
-import org.zerock.domain.MemberVO;
+import vita500.domain.MemberVO;
 
 
 public interface MemberDAO {

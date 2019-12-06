@@ -1,10 +1,11 @@
-package org.zerock.service;
+package vita500.service;
 
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
-import org.zerock.domain.MemberVO;
-import org.zerock.persistence.MemberDAO;
+
+import vita500.domain.MemberVO;
+import vita500.persistence.MemberDAO;
 
 @Service
 public class MemberServiceImpl implements MemberService {

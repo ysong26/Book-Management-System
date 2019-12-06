@@ -1,4 +1,4 @@
-package org.zerock.controller;
+package vita500.controller;
 
 import javax.inject.Inject;
 
@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.zerock.domain.MemberVO;
-import org.zerock.service.MemberService;
+
+import vita500.domain.MemberVO;
+import vita500.service.MemberService;
 
 @Controller
 @RequestMapping("/basic/*")

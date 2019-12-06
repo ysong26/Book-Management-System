@@ -1,4 +1,4 @@
-package org.zerock.controller;
+package vita500.controller;
 
 import java.text.DateFormat;
 import java.util.Date;

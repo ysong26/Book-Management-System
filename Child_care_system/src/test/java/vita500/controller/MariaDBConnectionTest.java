@@ -1,4 +1,4 @@
-package org.zerock.controller;
+package vita500.controller;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

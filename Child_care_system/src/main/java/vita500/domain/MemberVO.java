@@ -1,4 +1,4 @@
-package org.zerock.domain;
+package vita500.domain;
 
 public class MemberVO {
 

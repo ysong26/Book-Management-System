@@ -7,7 +7,7 @@
  
  <insert id="singup">
 	 INSERT INTO tbl_user (User_ID, User_PW, User_Name, User_CPN, User_Email) 
-	VALUES(#{User_ID},#{User_PW},#{User_Name},#{User_CPN},#{User_Emai})
+	VALUES(#{User_ID},#{User_PW},#{User_Name},#{User_CPN},#{User_Email})
  </insert>
  
 
