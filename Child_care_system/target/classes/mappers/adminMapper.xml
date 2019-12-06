@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.AdminMapper">
+ 
+	 <insert id="nfc_id_regist"> 
+	 	INSERT INTO `testdb`.`tbl_child` (`NFC_ID`, `User_ID`, `Child_Name`, `Child_Gender`)
+	 	VALUES (#{NFC_ID}, #{User_ID}, #{Child_Name}, #{Child_Gender});
+	 	
+	 </insert>
+	 
+	 
+	 <insert id="nfc_id_list">	 
+	 	SELECT * FROM `testdb`.`tbl_child` LIMIT 1000;	 		 		 	
+	 	
+	 </insert>
+	 
+	 
+	 
+ 
+ 
+ 
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

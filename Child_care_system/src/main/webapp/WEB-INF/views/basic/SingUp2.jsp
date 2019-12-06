@@ -44,12 +44,14 @@
             <tr class="register" height="30">
                 <td align="center">*</td>
                 <td width="50%">회원 ID (5~20자리의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다.)
-                <input type="text" name="User_ID" id="User_ID" style="text-align:center; width:200px; height:50px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <input type="text" name="User_ID" id="User_ID" style="text-align:center; width:200px; height:50px;"/>
+                <div class="check_font" id="ID_Check"></div>
+                </td>
             </tr>
            
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">비밀번호 (8~20 자리의 알파벳, 특수문자, 숫자만 입력 가능합니다.)
+                <td width="15%">비밀번호 (영문 대소문자, 숫자, 특수문자를 하나이상 포함하여 8~20 자리사이로 입력 가능합니다.)
                 <input type="password" name="User_PW" id="User_PW" style="text-align:center; width:200px; height:50px;" onchange="isSame()" /></td>
             </tr>
             <tr height="7">
@@ -63,7 +65,7 @@
 
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">이 름
+                <td width="15%">이 름 (2~6 자리의 한글만 입력 가능합니다.)
               <input type="text" name="User_Name" id="User_Name"style="text-align:center; width:150px; height:50px;"/></td>
             </tr>
 
@@ -73,7 +75,7 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">휴대전화 ('-'없이 번호만 입력해주세요.)<br>
-                <input type="text" name="User_CPN" id="User_CPN" placeholder="01012341234" style="text-align:center; width:250px; height:50px;" /></td>
+                <input type="text" name="User_CPN" id="User_CPN" placeholder="ex)01012341234" style="text-align:center; width:250px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -81,7 +83,7 @@
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
                 <td width="15%">이메일
-                <input type="email" name="User_Email" id="User_Email" placeholder="vita500@email.com"style="text-align:center; width:250px; height:50px;" /></td>
+                <input type="email" name="User_Email" id="User_Email" placeholder="ex)vita500@email.com"style="text-align:center; width:250px; height:50px;" /></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -208,7 +210,6 @@
       document.getElementById("SingUp").reset();
     }
   </script>
-
 
 
 
