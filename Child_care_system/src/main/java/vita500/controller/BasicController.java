@@ -2,6 +2,7 @@ package vita500.controller;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -74,8 +75,20 @@ public class BasicController {
 		}
 		
 		
-		
-		
+		@RequestMapping(value = "/login", method = RequestMethod.POST)
+		public String login(MemberVO vo, HttpServletRequest req) throws Exception {
+			
+			HttpSession session = req.getSession();
+			MemberVO login = service.login(vo);
+			
+			
+			if(login == null) {
+				session.setAttribute("member", null);
+			} else {
+				session.setAttribute("member", login);
+			}
+			return "redirect:/";
+		}
 		
 	}	
 
