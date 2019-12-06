@@ -13,7 +13,7 @@ public class AdminDAOImpl implements AdminDAO {
 	@Inject
 	private SqlSession session;
 	
-	static String namespace="org.zerock.mapper.AdminMapper";
+	static String namespace="vita500.mapper.AdminMapper";
 
 	@Override
 	public void nfc_id_regist(AdminVO adminVO) throws Exception {

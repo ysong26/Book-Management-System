@@ -3,7 +3,7 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.zerock.mapper.AdminMapper">
+<mapper namespace="vita500.mapper.AdminMapper">
  
 	 <insert id="nfc_id_regist"> 
 	 	INSERT INTO `testdb`.`tbl_child` (`NFC_ID`, `User_ID`, `Child_Name`, `Child_Gender`)

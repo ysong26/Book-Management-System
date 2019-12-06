@@ -54,9 +54,13 @@
 								
 								<li>
 								<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Admin&nbsp;&nbsp;&nbsp;&nbsp;</a>
+									
 									<ul>
-										<li><a href="admin/nfc_id_regist">NFC ID 등록</a></li>
-									</ul>
+										<li><a href="admin/member_list">회원 관리 </a></li>
+										<li><a href="admin/nfc_id_list">NFC_ID 관리 </a></li>
+									</ul>									
+									
+									
 								</li>
 								
 								
