@@ -18,9 +18,16 @@ public class MemberDAOImpl implements MemberDAO {
 	@Override
 	public void singup(MemberVO vo) throws Exception {
 		session.insert(namespace+".singup", vo);
-		
 				}
 
+	@Override
+	public MemberVO check(String user_ID) throws Exception {
+		return session.selectOne(namespace+".check", user_ID);
+	}
+
+	
+	
+	
 
 	  }
 
