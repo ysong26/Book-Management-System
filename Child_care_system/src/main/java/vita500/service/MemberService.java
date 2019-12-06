@@ -8,7 +8,7 @@ public interface MemberService {
 	public void regist(MemberVO vo) throws Exception; 
 	
 	//아이디 중복확인
-	public MemberVO idCheck(String user_ID) throws Exception;
+	public MemberVO idCheck(String User_ID) throws Exception;
 	
 	
 	

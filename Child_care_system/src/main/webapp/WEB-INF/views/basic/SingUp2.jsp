@@ -46,7 +46,7 @@
                 <td align="center">*</td>
                 <td width="50%">회원 ID (5~20자리의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다.)
                 <input type="text" name="User_ID" id="User_ID" style="text-align:center; width:200px; height:50px;"/>
-                <button type="button" class="idCheck">아이디 확인</button>
+                &emsp;&emsp;<button type="button" class="idCheck">중복확인</button>
                 	<p class="result">
                 		<span class="msg">아이디를 확인해주십시오.</span>
                 	</p>
@@ -55,7 +55,7 @@
            
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">비밀번호 (영문 대소문자, 숫자, 특수문자를 하나이상 포함하여 8~20 자리사이로 입력 가능합니다.)
+                <td width="15%">비밀번호 (영문 대소문자, 숫자, 특수문자를 하나이상 포함하여 5~20 자리사이로 입력 가능합니다.)
                 <input type="password" name="User_PW" id="User_PW" style="text-align:center; width:200px; height:50px;" onchange="isSame()" /></td>
             </tr>
             <tr height="7">
@@ -96,7 +96,7 @@
         </table>
         <br />
         <p><input type="submit"  class="" onclick="location.href='/'" value="취소">
-		<input type="submit"  class="btn-primary" id="confirmBtn" value="확인"></p>
+		<input type="submit"  class="btn-primary" id="confirmBtn" disabled="disabled" value="확인"></p>
     </form>
 
 			</section>
@@ -142,7 +142,7 @@
       var User_CPN = document.getElementById("User_CPN");
  	  // 정규식
       var idPattern = /^[A-Za-z]{1}[A-Za-z0-9]{5,20}$/;
-      var pwPattern = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,20}$/;
+      var pwPattern = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{5,20}$/;
       var namePattern = /^[가-힣]{2,6}$/;
       var emailPattern = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
       var phonePattern = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
@@ -221,23 +221,27 @@ $(".idCheck").click(function(){
  var query = {User_ID : $("#User_ID").val()};
  
  $.ajax({
-  url : "/member/idCheck",
+  url : "/basic/idCheck",
   type : "post",
   data : query,
   success : function(data) {
   
-   if(data == 1) {
-    $(".result .msg").text("사용 불가");
-    $(".result .msg").attr("style", "color:#f00");    
+   if(data == 1) { //아이디 중복되면
+    $(".result .msg").text("중복된 아이디입니다.");
+    $(".result .msg").attr("style", "color:#f00");
+    $("#confirmBtn").attr("disabled", "disabled"); //가입버튼 막아둠
    } else {
-    $(".result .msg").text("사용 가능");
+    $(".result .msg").text("사용가능한 아이디입니다."); //아이디 사용가능하면
     $(".result .msg").attr("style", "color:#00f");
+    $("#confirmBtn").removeAttr("disabled"); //가입버튼 열림
    }
   }
  });  // ajax 끝
 });
 
 </script>
+
+
 
 		<!-- Scripts -->
 			<script src="/resources/assets/js/jquery.min.js"></script>

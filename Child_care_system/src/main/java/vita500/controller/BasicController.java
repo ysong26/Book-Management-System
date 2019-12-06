@@ -1,6 +1,7 @@
 package vita500.controller;
 
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import vita500.domain.MemberVO;
@@ -53,5 +55,27 @@ public class BasicController {
 			
 			return "basic/SingUp3";
 		}
+		
+		
+		//아이디 중복 확인
+		@ResponseBody
+		@RequestMapping(value = "/idCheck", method = RequestMethod.POST)
+		public int postIdCheck(HttpServletRequest req) throws Exception {
+			
+			String UserId = req.getParameter("User_ID");
+			MemberVO idCheck = service.idCheck(UserId);
+			
+			int result = 0;
+			
+			if(idCheck != null) {
+				result = 1;
+			}
+			return result;
+		}
+		
+		
+		
+		
+		
 	}	
 

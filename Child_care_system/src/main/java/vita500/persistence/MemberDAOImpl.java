@@ -21,8 +21,8 @@ public class MemberDAOImpl implements MemberDAO {
 				}
 
 	@Override
-	public MemberVO idCheck(String user_ID) throws Exception {
-		return session.selectOne(namespace+".idCheck", user_ID);
+	public MemberVO idCheck(String User_ID) throws Exception {
+		return session.selectOne(namespace+".idCheck", User_ID);
 	}
 
 	
