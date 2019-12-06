@@ -65,7 +65,7 @@
 							
 							
 							
-		<section class="off-4 col-12-narrower" >
+		<section class="off-1 col-12" >
 
 	<h3>약관 및 동의</h3>
 <textarea cols="30" rows="5" placeholder="Disabled" disabled>여러분을 환영합니다.
@@ -120,14 +120,24 @@ Fax:031-224-3626
 2019년 12월 3일부터 시행되던 종전의 약관은 본 약관으로 대체하며, 본 약관은 2019년 12월 03일부터 적용됩니다.								   </textarea><br>
 	<input type="checkbox" id="termsService" name="termsService" class="chk">이벤트 등 프로모션 알림 메일 수신(선택)
 </p>    							  
-     							  
-		<p><input type="submit" onclick="location.href='/'" value="취소">
-		<input type="submit" id="agreeBtn" value="확인"></p>
-									
+	
+							</section>
+							
+						</div>	
+					</div>
+					
+					
+					<div class="container">
+						<div class="row gtr-200">
+							<section class="off-4 col-12">
+								<p><input type="submit" onclick="location.href='/'" value="취소">
+								<input type="submit" id="agreeBtn" value="확인"></p>
 							</section>
 						</div>
-					</div>
-							
+						</div>
+
+					
+					
 					<!-- Icons -->
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
