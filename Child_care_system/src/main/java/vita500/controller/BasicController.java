@@ -38,6 +38,7 @@ public class BasicController {
 		@RequestMapping(value="/SingUp2",method=RequestMethod.GET)
 		public void registerGET() {
 		}
+		
 		@RequestMapping(value="/SingUp2",method=RequestMethod.POST)
 		public String registerPOST(MemberVO member, RedirectAttributes rttr) throws Exception {
 			logger.info("회원가입(POST)");
