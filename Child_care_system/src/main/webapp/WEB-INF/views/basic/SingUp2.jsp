@@ -7,6 +7,7 @@
 	<head>
 		<title>VITA500</title>
 		<meta charset="utf-8" />
+		<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/resources/assets/css/main.css" />
 	</head>
@@ -45,7 +46,10 @@
                 <td align="center">*</td>
                 <td width="50%">회원 ID (5~20자리의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다.)
                 <input type="text" name="User_ID" id="User_ID" style="text-align:center; width:200px; height:50px;"/>
-                <div class="check_font" id="ID_Check"></div>
+                <button type="button" class="idCheck">아이디 확인</button>
+                	<p class="result">
+                		<span class="msg">아이디를 확인해주십시오.</span>
+                	</p>
                 </td>
             </tr>
            
@@ -211,7 +215,29 @@
     }
   </script>
 
+<script> 
+$(".idCheck").click(function(){
+ 
+ var query = {User_ID : $("#User_ID").val()};
+ 
+ $.ajax({
+  url : "/member/idCheck",
+  type : "post",
+  data : query,
+  success : function(data) {
+  
+   if(data == 1) {
+    $(".result .msg").text("사용 불가");
+    $(".result .msg").attr("style", "color:#f00");    
+   } else {
+    $(".result .msg").text("사용 가능");
+    $(".result .msg").attr("style", "color:#00f");
+   }
+  }
+ });  // ajax 끝
+});
 
+</script>
 
 		<!-- Scripts -->
 			<script src="/resources/assets/js/jquery.min.js"></script>

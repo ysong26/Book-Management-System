@@ -18,6 +18,13 @@ public class MemberServiceImpl implements MemberService {
 		dao.singup(vo);
 		}
 
+	@Override
+	public MemberVO idCheck(String user_ID) throws Exception {
+		return dao.idCheck(user_ID);
+	}
+
+	
+	
 
 	}
 
