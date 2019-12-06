@@ -49,7 +49,7 @@
            
             <tr class="register" height="30">
                 <td width="5%" align="center">*</td>
-                <td width="15%">비밀번호
+                <td width="15%">비밀번호 (8~20 자리의 알파벳, 특수문자, 숫자만 입력 가능합니다.)
                 <input type="password" name="User_PW" id="User_PW" style="text-align:center; width:200px; height:50px;" onchange="isSame()" /></td>
             </tr>
             <tr height="7">
@@ -136,12 +136,13 @@
       var User_CPN = document.getElementById("User_CPN");
  	  // 정규식
       var idPattern = /^[A-Za-z]{1}[A-Za-z0-9]{5,20}$/;
-      var pwPattern = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/;
+      var pwPattern = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,20}$/;
+      var namePattern = /^[가-힣]{2,6}$/;
       var emailPattern = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
       var phonePattern = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
  
       // 아이디
-      if(idPattern.test(User_ID.value) == true){`
+      if(idPattern.test(User_ID.value) == true){
         text += "ID : " + User_ID.value + "\n";
       }
       else 
@@ -180,7 +181,7 @@
       }
       
     	// 이름
-        if(emailPattern.test(User_Name.value) == true){
+        if(namePattern.test(User_Name.value) == true){
           text += "NAME : " + User_Name.value + "\n";
         }
         else {
