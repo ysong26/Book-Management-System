@@ -5,7 +5,8 @@ public class AdminVO {
 	private String nfc_id;
 	private String user_id;
 	private String child_name;
-	private String child_gender;	
+	private String child_gender;
+	
 	
 	public String getNfc_id() {
 		return nfc_id;
@@ -31,10 +32,6 @@ public class AdminVO {
 	public void setChild_gender(String child_gender) {
 		this.child_gender = child_gender;
 	}
-	@Override
-	public String toString() {
-		return "AdminVO [nfc_id=" + nfc_id + ", user_id=" + user_id + ", child_name=" + child_name + ", child_gender="
-				+ child_gender + "]";
-	}
-
+	
+	
 }

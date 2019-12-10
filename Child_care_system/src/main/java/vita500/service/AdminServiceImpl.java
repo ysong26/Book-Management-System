@@ -7,6 +7,7 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 
 import vita500.domain.AdminVO;
+import vita500.domain.MemberVO;
 import vita500.persistence.AdminDAO;
 
 @Service
@@ -26,5 +27,10 @@ public class AdminServiceImpl implements AdminService {
 		adminDAO.nfc_id_regist(adminVO);
 	}
 
+
+	@Override
+	public List<MemberVO> user_list() throws Exception {		
+		return adminDAO.user_list();
+	}
 	
 }

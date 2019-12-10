@@ -56,8 +56,9 @@
 								<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Admin&nbsp;&nbsp;&nbsp;&nbsp;</a>
 									
 									<ul>
-										<li><a href="/admin/Member_list">회원 관리 </a></li>
+										<li><a href="/admin/User_list">회원 관리 </a></li>
 										<li><a href="/admin/NFC_ID_list">NFC_ID 관리 </a></li>
+										<li><a href="/admin/Time_Chart">시간 차트 </a></li>
 									</ul>									
 									
 								</li>								

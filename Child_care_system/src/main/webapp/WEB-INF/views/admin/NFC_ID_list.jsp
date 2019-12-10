@@ -27,8 +27,7 @@
 	
 	
 	<center>
-		<input type="reset" onclick="location.href='/admin/NFC_ID_regist'" value="등록">
-		<input type="reset" onclick="location.href='/admin/NFC_ID_delete'" value="삭제">
+		<input type="reset" onclick="location.href='/admin/NFC_ID_regist'" value="등록 페이지">		
 	</center>
 		
 	

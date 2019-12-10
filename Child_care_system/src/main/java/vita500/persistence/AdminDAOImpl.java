@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 import vita500.domain.AdminVO;
+import vita500.domain.MemberVO;
 
 @Repository
 public class AdminDAOImpl implements AdminDAO {
@@ -27,6 +28,10 @@ public class AdminDAOImpl implements AdminDAO {
 		session.insert(namespace+".nfc_id_regist", adminVO);
 	}
 
+	@Override
+	public List<MemberVO> user_list() throws Exception {
+		return session.selectList(namespace+".user_list");		
+	}
 	
 
 }

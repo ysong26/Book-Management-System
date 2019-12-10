@@ -7,16 +7,16 @@
  
 	 <insert id="nfc_id_regist"> 
 	 	INSERT INTO `testdb`.`tbl_child` (`NFC_ID`, `User_ID`, `Child_Name`, `Child_Gender`)
-	 	VALUES (#{NFC_ID}, #{User_ID}, #{Child_Name}, #{Child_Gender});
-	 	
+	 	VALUES (#{NFC_ID}, #{User_ID}, #{Child_Name}, #{Child_Gender});	 	
 	 </insert>
 	 
 	 <select id="nfc_id_list" resultType="vita500.domain.AdminVO">
-	 	SELECT * FROM `testdb`.`tbl_child` LIMIT 1000;
-	 	
-	 </select>	 
+	 	SELECT * FROM `testdb`.`tbl_child` LIMIT 1000;	 	
+	 </select>
 	 
- 
+	 <select id="user_list" resultType="vita500.domain.MemberVO">
+	 	SELECT * FROM `testdb`.`tbl_user` LIMIT 1000;	 	
+	 </select> 
  
  
 </mapper>
