@@ -2,40 +2,39 @@ package vita500.domain;
 
 public class AdminVO {
 	
-	private String NFC_ID;
-	private String User_ID;
-	private String Child_Name;
-	private String Child_Gender;
+	private String nfc_id;
+	private String user_id;
+	private String child_name;
+	private String child_gender;	
 	
-	public String getNFC_ID() {
-		return NFC_ID;
+	public String getNfc_id() {
+		return nfc_id;
 	}
-	public void setNFC_ID(String nFC_ID) {
-		NFC_ID = nFC_ID;
+	public void setNfc_id(String nfc_id) {
+		this.nfc_id = nfc_id;
 	}
-	public String getUser_ID() {
-		return User_ID;
+	public String getUser_id() {
+		return user_id;
 	}
-	public void setUser_ID(String user_ID) {
-		User_ID = user_ID;
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
-	public String getChild_Name() {
-		return Child_Name;
+	public String getChild_name() {
+		return child_name;
 	}
-	public void setChild_Name(String child_Name) {
-		Child_Name = child_Name;
+	public void setChild_name(String child_name) {
+		this.child_name = child_name;
 	}
-	public String getChild_Gender() {
-		return Child_Gender;
+	public String getChild_gender() {
+		return child_gender;
 	}
-	public void setChild_Gender(String child_Gender) {
-		Child_Gender = child_Gender;
+	public void setChild_gender(String child_gender) {
+		this.child_gender = child_gender;
 	}
-	
 	@Override
 	public String toString() {
-		return "AdminVO [NFC_ID=" + NFC_ID + ", User_ID=" + User_ID + ", Child_Name=" + Child_Name + ", Child_Gender="
-				+ Child_Gender + "]";
-	}	
+		return "AdminVO [nfc_id=" + nfc_id + ", user_id=" + user_id + ", child_name=" + child_name + ", child_gender="
+				+ child_gender + "]";
+	}
 
 }

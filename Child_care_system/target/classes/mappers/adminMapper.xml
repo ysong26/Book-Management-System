@@ -11,13 +11,10 @@
 	 	
 	 </insert>
 	 
-	 
-	 <insert id="nfc_id_list">	 
-	 	SELECT * FROM `testdb`.`tbl_child` LIMIT 1000;	 		 		 	
+	 <select id="nfc_id_list" resultType="vita500.domain.AdminVO">
+	 	SELECT * FROM `testdb`.`tbl_child` LIMIT 1000;
 	 	
-	 </insert>
-	 
-	 
+	 </select>	 
 	 
  
  
