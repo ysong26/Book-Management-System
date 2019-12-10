@@ -16,7 +16,12 @@
 	SELECT * FROM tbl_user WHERE User_ID = #{User_ID}
 </select>
 
- 
+  <!-- 로그인 -->
+<select id="login" resultType="vita500.domain.MemberVO">
+	SELECT User_ID, User_PW FROM tbl_user WHERE User_ID = #{User_ID} AND User_PW = #{User_PW}
+</select>
+
+
  
 </mapper>
 
