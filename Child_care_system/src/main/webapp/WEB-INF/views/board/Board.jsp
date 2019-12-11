@@ -20,46 +20,17 @@
             </tr>
             
             	</tr>
-	
+	<c:forEach items="${list}" var="data">	
 	<tr>
-		<td style="width: 10px">1</td>
-		<td>이제 곧 페이지 1이라면서요?</td>
-		<td>원빈</td>
-		<th>2016.12.02</th>
-		<td style="width: 40px">2</td>
-		</tr>
 	
-		<tr>
-		<td style="width: 50px">   2</td>
-		<td>이제 곧 페이지 2이라면서요?</td>
-		<td>장돈건</td>
-		<th>2016.12.02</th>
-		<td style="width: 40px">11</td>
+		<td style="width: 10px">${data.board_No}</td>
+			<td><a href ="detail?board_No=${data.board_No}">${data.board_Subject}</a></td>
+			<td>${data.user_ID}</td>
+			<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${data.board_DateTime}"/></td>
+			<td><span class="badge bg-red">${data.board_Cnt}</span></td>
 		</tr>
-	
-		<tr>
-		<td style="width: 50px">   3</td>
-		<td>이제 곧 페이지 3이라면서요?</td>
-		<td>아이유</td>
-		<th>2016.12.02</th>
-		<td style="width: 40px">10</td>
-		</tr>
+	</c:forEach>
 		
-		<tr>
-		<td style="width: 50px">   4</td>
-		<td>이제 곧 페이지 4이라면서요?</td>
-		<td>현빈</td>
-		<th>2016.12.03</th>
-		<td style="width: 40px">5</td>
-		</tr>
-		
-		<tr>
-		<td style="width: 50px">   5</td>
-		<td>이제 곧 페이지 5이라면서요?</td>
-		<td>진우</td>
-		<th>2016.12.05</th>
-		<td style="width: 40px">12</td>
-		</tr>
 		
 		
 					

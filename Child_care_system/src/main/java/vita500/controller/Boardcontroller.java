@@ -1,5 +1,7 @@
 package vita500.controller;
 
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
 
@@ -31,20 +33,27 @@ public class Boardcontroller {
 	
 	@RequestMapping(value="/Board",method=RequestMethod.GET)
 	public void listALL(Model model) throws Exception{
+		/*
+		 * List<BoardVO> aaa = service.listAll(); for(BoardVO bb: aaa){
+		 * System.out.println(bb.getUser_ID()); }
+		 */	
+		///////////////////////////
 		logger.info("게시글 요청");
 		model.addAttribute("list",service.listAll());
-		//list 값을 찍어봅시다.
-		
-
-		
+	
         }
 	
+
 	
-	@RequestMapping("Board")
-	public String Sing1() {
+	@RequestMapping("detail")
+	public void Sing1(int board_No) throws Exception {
+
+			
+			System.out.println(board_No);
+			}
+	
 		
-		return "board/Board";
-	}
+	
 	
 	
 	
