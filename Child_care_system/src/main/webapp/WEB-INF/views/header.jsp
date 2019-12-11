@@ -24,7 +24,7 @@
 							<ul>
 								<li class="current"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;</a>
 									<ul>
-										<li><a href="/basic/About">Our Story</a></li>
+										<li><a href="/member/About">Our Story</a></li>
 									</ul>
 								</li>
 								

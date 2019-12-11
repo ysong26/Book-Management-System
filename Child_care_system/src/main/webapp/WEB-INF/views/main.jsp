@@ -10,7 +10,7 @@
 				<section id="banner">
 					<header>
 						<h2><em>우리아이 안심 귀가 서비스</em></h2>
-						<a href="basic/SingUp1" class="button">Submit</a>
+						<a href="member/SingUp1" class="button">Submit</a>
 					</header>
 				</section>
 										
@@ -45,7 +45,7 @@
 							</section>
 							<section class="col-6 col-12-narrower">
 								<h3>LOGIN</h3>
-								<form role="form" method="post" autocomplete="off" action="/basic/login"> 
+								<form role="form" method="post" autocomplete="off" action="/member/login"> 
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobilep">
 											<input type="text" name="id" id="id" placeholder="ID" />

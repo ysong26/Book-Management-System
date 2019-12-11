@@ -19,10 +19,10 @@ import vita500.domain.MemberVO;
 import vita500.service.MemberService;
 
 @Controller
-@RequestMapping("/basic/*")
-public class BasicController {
+@RequestMapping("/member/*")
+public class MemberController {
  
-	private static final Logger logger = LoggerFactory.getLogger(BasicController.class);
+	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 	
 	@Inject
 	MemberService service;
@@ -35,7 +35,7 @@ public class BasicController {
 		@RequestMapping("SingUp1")
 		public String Sing1() {
 			
-			return "basic/SingUp1";
+			return "member/SingUp1";
 		}
 				
 		@RequestMapping(value="/SingUp2",method=RequestMethod.GET)
@@ -47,14 +47,14 @@ public class BasicController {
 			logger.info("회원가입(POST)");
 			logger.info(member.toString());
 			service.regist(member);
-			return "basic/SingUp3";
+			return "member/SingUp3";
 		}
 		
 		
 		@RequestMapping("SingUp3")
 		public String Sing3() {
 			
-			return "basic/SingUp3";
+			return "member/SingUp3";
 		}
 		
 		
@@ -80,7 +80,6 @@ public class BasicController {
 			logger.info("post login");
 			
 			HttpSession session = req.getSession();
-			
 			MemberVO login = service.login(vo);
 			
 			
