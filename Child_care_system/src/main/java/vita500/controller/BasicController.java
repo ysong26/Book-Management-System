@@ -77,8 +77,10 @@ public class BasicController {
 		
 		@RequestMapping(value = "/login", method = RequestMethod.POST)
 		public String login(MemberVO vo, HttpServletRequest req) throws Exception {
+			logger.info("post login");
 			
 			HttpSession session = req.getSession();
+			
 			MemberVO login = service.login(vo);
 			
 			

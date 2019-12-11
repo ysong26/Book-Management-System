@@ -13,17 +13,17 @@ public class MemberServiceImpl implements MemberService {
 	@Inject
 	private MemberDAO dao;
 	
-	@Override
+	@Override //회원가입
 	public void regist(MemberVO vo) throws Exception {
 		dao.singup(vo);
 		}
 
-	@Override
+	@Override //중복체크
 	public MemberVO idCheck(String User_ID) throws Exception {
 		return dao.idCheck(User_ID);
 	}
 
-	@Override
+	@Override //로그인
 	public MemberVO login(MemberVO vo) throws Exception {
 		return dao.login(vo);
 	}
