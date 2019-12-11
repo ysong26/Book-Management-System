@@ -44,7 +44,7 @@
                     <!-- 중복검사  ID랑 PW ajax로 ,정규식, 단방향암호화 -->
             <tr class="register" height="30">
                 <td align="center">*</td>
-                <td width="50%">회원 ID (5~20자리의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다.)
+                <td width="50%">회원 ID (5~20자리의 알파벳, 숫자만 입력 가능합니다.)
                 <input type="text" name="User_ID" id="User_ID" style="text-align:center; width:200px; height:50px;"/>
                 &emsp;&emsp;<button type="button" class="idCheck">중복확인</button>
                 	<p class="result">

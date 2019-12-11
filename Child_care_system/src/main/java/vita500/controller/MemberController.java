@@ -76,20 +76,56 @@ public class MemberController {
 		
 		
 		@RequestMapping(value = "/login", method = RequestMethod.POST)
-		public String login(MemberVO vo, HttpServletRequest req) throws Exception {
+		public String login(MemberVO vo, HttpSession session, RedirectAttributes rttr) throws Exception {
 			logger.info("post login");
 			
-			HttpSession session = req.getSession();
+	
 			MemberVO login = service.login(vo);
 			
+		/* logger.info(login.getUser_ID()); */
 			
 			if(login == null) {
 				session.setAttribute("member", null);
+				rttr.addFlashAttribute("msg",false);
 			} else {
 				session.setAttribute("member", login);
 			}
+			System.out.print(session.getAttribute("member"));
+			
 			return "redirect:/";
 		}
+		
+		
+		@RequestMapping(value = "/logout", method = RequestMethod.GET)
+		public String logout(HttpSession session) throws Exception{
+			logger.info("logout");
+
+			session.invalidate();
+			
+			return "redirect:/";
+		}
+		
+	
+		@RequestMapping("find1")
+		public String find() {
+			
+			return "member/find1";
+		}
+		
+		
+		@RequestMapping("find_id")
+		public String findid() {
+			
+			return "member/find_id";
+		}
+		
+		
+		@RequestMapping("find_pw")
+		public String findpw() {
+			
+			return "member/find_pw";
+		}
+		
 		
 	}	
 
