@@ -15,17 +15,17 @@ public class MemberDAOImpl implements MemberDAO {
 	
 	private static String namespace="org.zerock.mapper.MemberMapper";
 	
-	@Override
+	@Override //회원가입
 	public void singup(MemberVO vo) throws Exception {
 		session.insert(namespace+".singup", vo);
 				}
 
-	@Override
+	@Override //중복확인
 	public MemberVO idCheck(String User_ID) throws Exception {
 		return session.selectOne(namespace+".idCheck", User_ID);
 	}
 
-	@Override
+	@Override //로그인
 	public MemberVO login(MemberVO vo) throws Exception {
 		return session.selectOne(namespace+ ".login", vo);
 	}

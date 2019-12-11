@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
 <%@include file="header.jsp"%>
 
 
@@ -10,7 +9,9 @@
 				<section id="banner">
 					<header>
 						<h2><em>우리아이 안심 귀가 서비스</em></h2>
-						<a href="member/SingUp1" class="button">Submit</a>
+						<c:if test="${member == null }">
+						<a href="member/SingUp1" class="button">Submit!</a>
+						</c:if>
 					</header>
 				</section>
 										
@@ -44,29 +45,44 @@
 								</ul>
 							</section>
 							<section class="col-6 col-12-narrower">
+							<c:if test="${member == null}">
 								<h3>LOGIN</h3>
 								<form role="form" method="post" autocomplete="off" action="/member/login"> 
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobilep">
-											<input type="text" name="id" id="id" placeholder="ID" />
+											<input type="text" name="User_ID" id="id" placeholder="ID" />
 										</div>&nbsp;&nbsp;&nbsp;&nbsp;
 										<div class="col-6 col-12-mobilep">
-											<input type="password" name="pw" id="pw" placeholder="PW" />
+											<input type="password" name="User_PW" id="pw" placeholder="PW" />
 										</div>
 
 										<div class="col-12">
 											<ul class="actions">
-												<li><input type="submit" class="button alt" value="로그인" /></li>
-												<li><input type="submit" class="button alt" value="ID/PW찾기" /></li>
+												<li><input type="submit" value="로그인" />&emsp;&emsp;</li>
+												<a href="member/find1" class="button">ID/PW찾기</a>
 											</ul>
 										</div>
 									</div>
 								</form>
-								<p>${login.User_Name}님 환영합니다.</p>
+								</c:if>
+								
+								
+					<c:if test="${msg == false }">
+						<script>
+						alert("로그인에 실패했습니다.\n아이디 또는 패스워드를 다시 확인해주세요.");
+						</script>
+					</c:if>
+
+
+					<c:if test="${member != null }">
+						<h3>${member.user_Name}님 환영합니다!</h3>
+						<a href="member/logout">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;로그아웃</a>
+					</c:if>
+	
 							</section>
 						</div>
 					</div>
 				</div>				
 
-					
+			
 <%@include file="footer.jsp"%>
