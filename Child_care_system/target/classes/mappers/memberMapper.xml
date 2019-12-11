@@ -24,9 +24,14 @@
 
    <!-- 아이디 찾기 -->
 <select id="findid" resultType="vita500.domain.MemberVO">
-	SELECT User_ID FROM tbl_user WHERE User_Name = #{User_Name} AND User_Email = #{User_Email}
+	SELECT User_ID FROM tbl_user WHERE User_Name = #{User_Name} AND User_Email = #{User_Email} 
 </select>
 
+
+   <!-- 비밀번호 찾기 -->
+<select id="findid" resultType="vita500.domain.MemberVO">
+	SELECT User_PW FROM tbl_user WHERE User_ID = #{User_ID}  AND User_Name = #{User_Name}  AND User_Email = #{User_Email} 
+</select>
 
 </mapper>
 
