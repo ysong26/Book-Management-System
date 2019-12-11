@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import vita500.domain.AdminVO;
 import vita500.domain.MemberVO;
+import vita500.domain.WifiVO;
 
 @Repository
 public class AdminDAOImpl implements AdminDAO {
@@ -31,6 +32,22 @@ public class AdminDAOImpl implements AdminDAO {
 	@Override
 	public List<MemberVO> user_list() throws Exception {
 		return session.selectList(namespace+".user_list");		
+	}
+
+	@Override
+	public List<WifiVO> time_list() throws Exception {
+		return session.selectList(namespace+".time_list");		
+	}
+
+	@Override
+	public List<WifiVO> time_chart() throws Exception {
+		return session.selectList(namespace+".time_chart");
+
+	}
+
+	@Override
+	public List<AdminVO> nfc_id() throws Exception {		
+		return session.selectList(namespace+".nfc_id");
 	}
 	
 
