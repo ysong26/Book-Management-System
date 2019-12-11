@@ -39,7 +39,7 @@
 								<li>
 								<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;QnA&nbsp;&nbsp;&nbsp;&nbsp;</a>
 									<ul>
-										<li><a href="/수정할곳.jsp">Board</a></li>
+										<li><a href="/board/Board">Board</a></li>
 									
 									</ul>
 								</li>
