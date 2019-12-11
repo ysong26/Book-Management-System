@@ -4,7 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="false"%>
 
-<%@include file="../board/mainpage.jsp"%>
+
 
 <!-- Main content -->
 <section class="content">
@@ -68,3 +68,6 @@
     }
     
     </script>
+    
+    
+    

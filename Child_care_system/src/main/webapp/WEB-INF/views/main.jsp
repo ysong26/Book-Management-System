@@ -5,51 +5,6 @@
 <%@include file="header.jsp"%>
 
 
-<<<<<<< HEAD
-			<!-- Header -->
-				<div id="header">
-
-					<!-- Logo -->
-						<h1><a href="/" id="logo">VITA <em>500</em></a></h1>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;</a>
-									<ul>
-										<li><a href="about.jsp">Our Story</a></li>
-									
-									</ul>
-								</li>
-								
-								<li>
-									<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Time&nbsp;&nbsp;&nbsp;&nbsp;</a>
-									<ul>
-										<li><a href="수정할곳.jsp">My Kids</a></li>
-									
-									</ul>
-								</li>
-								
-								<li>
-								<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;QnA&nbsp;&nbsp;&nbsp;&nbsp;</a>
-									<ul>
-										<li><a href="board/mainpage">Board</a></li>
-									
-									</ul>
-								</li>
-								
-								<li>
-								<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;MyPage&nbsp;&nbsp;&nbsp;&nbsp;</a>
-									<ul>
-										<li><a href="수정할곳.jsp">MyPage</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
-
-				</div>
-=======
->>>>>>> branch 'master' of https://github.com/ysong26/Child-care-systems.git
 
 			<!-- Banner -->
 				<section id="banner">
