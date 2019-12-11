@@ -17,7 +17,7 @@ import vita500.service.AdminService;
 @RequestMapping("/admin/*")
 public class AdminController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(BasicController.class);	
+	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);	
 	
 	@Inject
 	AdminService adminService;

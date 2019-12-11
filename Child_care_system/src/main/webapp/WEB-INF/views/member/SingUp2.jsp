@@ -221,7 +221,7 @@ $(".idCheck").click(function(){
  var query = {User_ID : $("#User_ID").val()};
  
  $.ajax({
-  url : "/basic/idCheck",
+  url : "/member/idCheck",
   type : "post",
   data : query,
   success : function(data) {

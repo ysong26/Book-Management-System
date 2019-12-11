@@ -5,7 +5,7 @@ import vita500.domain.MemberVO;
 
 public interface MemberDAO {
 	
-	public void singup(MemberVO vo) throws Exception; //글 작성
+	public void singup(MemberVO vo) throws Exception; //회원가입
 	
 	public MemberVO idCheck(String User_ID) throws Exception; //아이디 중복 검사
 	

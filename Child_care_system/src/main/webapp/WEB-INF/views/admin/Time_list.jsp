@@ -8,6 +8,7 @@
 	<br> <center>		
 		<h1> 시간 관리  </h1>		
 		
+		NFC 아이디 :
 		<select name="NFC아이디">
 			<c:forEach items="${nfc_id}" var="nfc_id">				    
 		    	<option value="${nfc_id.nfc_id}"> ${nfc_id.nfc_id} </option>

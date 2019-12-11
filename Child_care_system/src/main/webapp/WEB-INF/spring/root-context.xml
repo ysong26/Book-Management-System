@@ -39,10 +39,9 @@
 	</bean>
 		
 
-
 	<context:component-scan base-package="vita500.persistence"/>
 	<context:component-scan base-package="vita500.service"/>
-	
+
 
 
 
