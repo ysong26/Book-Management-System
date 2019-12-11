@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -67,7 +68,7 @@ input::-moz-focus-inner {
 
 input, select, textarea {
 	-moz-appearance: none;
-	-webkit-appearance: none;
+
 	-ms-appearance: none;
 	appearance: none;
 }
@@ -2004,7 +2005,6 @@ input, select, textarea {
 	input[type="email"],
 	textarea {
 		-moz-appearance: none;
-		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
 		-moz-transition: border-color 0.2s ease-in-out;
@@ -2404,7 +2404,6 @@ input, select, textarea {
 	button,
 	.button {
 		-moz-appearance: none;
-		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
 		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -3356,5 +3355,8 @@ input, select, textarea {
 				padding: 2em 20px;
 				text-align: left;
 			}
+			
+			
+			
 
 	}

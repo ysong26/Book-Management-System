@@ -2,17 +2,10 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<%@include file="header.jsp"%>
 
-<html>
-	<head>
-		<title>VITA500</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/resources/assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
 
+<<<<<<< HEAD
 			<!-- Header -->
 				<div id="header">
 
@@ -55,49 +48,49 @@
 						</nav>
 
 				</div>
+=======
+>>>>>>> branch 'master' of https://github.com/ysong26/Child-care-systems.git
 
 			<!-- Banner -->
 				<section id="banner">
 					<header>
 						<h2><em>우리아이 안심 귀가 서비스</em></h2>
-						<a href="여기수정.jps" class="button">Submit</a>
+						<a href="basic/SingUp1" class="button">Submit</a>
 					</header>
 				</section>
-			</div>							
-
-
+										
 
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
 						<div class="row">
 							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Links to Stuff</h3>
+								<h3>Notice</h3>
 								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
+									<li><a href="#">2019-12-03 서버 임시 오픈 공지</a></li>
+									<li><a href="#">서비스 오픈 안내 관련 공지</a></li>
+									<li><a href="#">시스템 오류 관련하여 공지</a></li>
+									<li><a href="#">어린이 등·하원 관리 문의사항</a></li>
+									<li><a href="#">테스트 공지입니다.</a></li>
+									<li><a href="#">홈페이지 오류 수정··</a></li>
+									<li><a href="#">VITA500 홈페이지 개설···</a></li>
 								</ul>
 							</section>
 							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>More Links to Stuff</h3>
+								<h3>History</h3>
 								<ul class="links">
-									<li><a href="#">Duis neque nisi dapibus</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan sed</a></li>
-									<li><a href="#">Mattis et sed accumsan</a></li>
-									<li><a href="#">Duis neque nisi sed</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum amet varius</a></li>
+									<li><a href="#">2019-12-03 입금자 내역</a></li>
+									<li><a href="#">2019-12-02 입금자 내역</a></li>
+									<li><a href="#">11월 미확인 입금자</a></li>
+									<li><a href="#">2019-11-29 입금자 내역</a></li>
+									<li><a href="#">2019-11-28 입금자 내역</a></li>
+									<li><a href="#">2019-11-27 입금자 내역</a></li>
+									<li><a href="#">2019-11-26 입금자 내역</a></li>
 								</ul>
 							</section>
 							<section class="col-6 col-12-narrower">
 								<h3>LOGIN</h3>
-								<form>
+								<form role="form" method="post" autocomplete="off" action="/basic/login"> 
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobilep">
 											<input type="text" name="id" id="id" placeholder="ID" />
@@ -114,37 +107,11 @@
 										</div>
 									</div>
 								</form>
+								<p>${login.User_Name}님 환영합니다.</p>
 							</section>
 						</div>
 					</div>
+				</div>				
 
-					<!-- Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
-						</ul>
-
-					<!-- Copyright -->
-						<div class="copyright">
-							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="https://github.com/ysong26/Child-care-systems">Team_VITA500</a></li>
-							</ul>
-						</div>
-
-				</div>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="/resources/assets/js/jquery.min.js"></script>
-			<script src="/resources/assets/js/jquery.dropotron.min.js"></script>
-			<script src="/resources/assets/js/browser.min.js"></script>
-			<script src="/resources/assets/js/breakpoints.min.js"></script>
-			<script src="/resources/assets/js/util.js"></script>
-			<script src="/resources/assets/js/main.js"></script>
-
-	</body>
-</html>
+					
+<%@include file="footer.jsp"%>

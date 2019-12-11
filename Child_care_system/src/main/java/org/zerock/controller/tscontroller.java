@@ -27,7 +27,7 @@ public class tscontroller {
 	
 	
 	
-	@RequestMapping(value="/listpage",method=RequestMethod.GET)
+	@RequestMapping(value="/mainpage",method=RequestMethod.GET)
 	public void listALL(Model model) throws Exception{
 		logger.info("게시글 요청");
 		model.addAttribute("list",service.listAll());
