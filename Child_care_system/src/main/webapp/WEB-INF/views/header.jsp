@@ -58,7 +58,7 @@
 									<ul>
 										<li><a href="/admin/User_list">회원 관리 </a></li>
 										<li><a href="/admin/NFC_ID_list">NFC_ID 관리 </a></li>
-										<li><a href="/admin/Time_Chart">시간 차트 </a></li>
+										<li><a href="/admin/Time_list">등하원 시간 확인 </a></li>
 									</ul>									
 									
 								</li>								

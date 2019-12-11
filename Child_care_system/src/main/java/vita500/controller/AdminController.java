@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import vita500.domain.AdminVO;
 import vita500.service.AdminService;
@@ -22,12 +21,6 @@ public class AdminController {
 	
 	@Inject
 	AdminService adminService;
-	
-	@RequestMapping(value="/main", method=RequestMethod.GET)
-	public void mainGET() throws Exception  {		
-		
-	}	
-	
 	
 	
 	@RequestMapping(value="/User_list", method=RequestMethod.GET)	
@@ -51,13 +44,11 @@ public class AdminController {
 	@RequestMapping(value="/NFC_ID_list", method=RequestMethod.POST)	
 	public void nfc_id_list_() {
 		logger.info("/NFC_ID_list(POST)");		
-	}
-	
+	}	
 	
 	
 	@RequestMapping(value="/NFC_ID_regist", method=RequestMethod.GET)
-	public void registerGET() throws Exception  {		
-		
+	public void registerGET() throws Exception  {
 	}
 	
 	@RequestMapping(value="/NFC_ID_regist", method=RequestMethod.POST)		
@@ -66,13 +57,22 @@ public class AdminController {
 		logger.info(adminService.toString());		
 		adminService.nfc_id_regist(adminVO);		
 		return "admin/NFC_ID_regist";
+	}	
+	
+	
+	@RequestMapping(value="/Time_list", method=RequestMethod.GET)	
+	public void time_list_GET(Model model) throws Exception {
+		logger.info("/Time_list(GET)");		
+		model.addAttribute("Time_list", adminService.time_list());
+		model.addAttribute("nfc_id", adminService.nfc_id());
 	}
 	
 	
-	@RequestMapping(value="/Time_Chart", method=RequestMethod.GET)	
-	public void time_chart() throws Exception {				
+	@RequestMapping(value="/Time_chart", method=RequestMethod.GET)	
+	public void time_chart_GET(Model model) throws Exception {
+		logger.info("/Time_chart(GET)");
+		model.addAttribute("Time_chart", adminService.time_chart());
 	}
-	
 	
 	
 	

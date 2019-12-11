@@ -16,7 +16,19 @@
 	 
 	 <select id="user_list" resultType="vita500.domain.MemberVO">
 	 	SELECT * FROM `testdb`.`tbl_user` LIMIT 1000;	 	
-	 </select> 
+	 </select>	 
+	 
+	 <select id="time_list" resultType="vita500.domain.WifiVO">
+	 	SELECT * FROM `testdb`.`nfc_wifi_linux` WHERE `nfc_id`='52_d7_b3_1b' ORDER BY `NFC_No` DESC LIMIT 10;
+	 </select>
+	 
+	 <select id="time_chart" resultType="vita500.domain.WifiVO">
+	 	SELECT * FROM `testdb`.`nfc_wifi_linux` WHERE `nfc_id`='52_d7_b3_1b' ORDER BY `NFC_No` DESC LIMIT 10;
+	 </select>
+	 
+	 <select id="nfc_id" resultType="vita500.domain.AdminVO">
+	 	SELECT nfc_id FROM tbl_child;
+	 </select>  
  
  
 </mapper>
