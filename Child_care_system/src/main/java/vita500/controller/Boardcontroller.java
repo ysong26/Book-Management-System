@@ -14,6 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import vita500.domain.BoardVO;
 import vita500.domain.Criteria;
+import vita500.domain.MemberVO;
 import vita500.service.BoardService;
 
 
@@ -44,8 +45,17 @@ public class Boardcontroller {
 		
 		return "board/Board";
 	}
+	
+	
+	
+	@RequestMapping("pan")
+	public String Sing3() {
 		
+		return "board/pan";
+	}
+	
 
+	
 }
 
 	
