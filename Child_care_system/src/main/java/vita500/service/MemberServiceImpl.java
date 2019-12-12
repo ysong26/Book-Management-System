@@ -28,6 +28,7 @@ public class MemberServiceImpl implements MemberService {
 		return dao.login(vo);
 	}
 
+
 	
 	
 

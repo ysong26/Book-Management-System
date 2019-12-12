@@ -10,4 +10,5 @@ public interface MemberDAO {
 	public MemberVO idCheck(String User_ID) throws Exception; //아이디 중복 검사
 	
 	public MemberVO login(MemberVO vo) throws Exception; //로그인
+
 }

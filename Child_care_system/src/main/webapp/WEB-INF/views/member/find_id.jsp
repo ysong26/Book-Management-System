@@ -65,7 +65,10 @@
   	
         </table>
         <br />
-        <p><input type="submit"  class="btn-primary" id="confirmBtn" disabled="disabled" value="아이디 찾기"></p>
+    <input type="submit"  class="btn-primary" id="confirmBtn" disabled="disabled" value="아이디 찾기">
+    <input type="button" class="btn-back" onclick="history.go(-1);" value="취소">
+
+    
     </form>
 
 			</section>

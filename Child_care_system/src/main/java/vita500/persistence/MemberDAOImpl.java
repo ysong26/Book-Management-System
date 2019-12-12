@@ -30,8 +30,9 @@ public class MemberDAOImpl implements MemberDAO {
 		return session.selectOne(namespace+ ".login", vo);
 	}
 
-	
-	
+
+
+
 	
 
 	  }

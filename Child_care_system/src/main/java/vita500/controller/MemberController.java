@@ -112,11 +112,10 @@ public class MemberController {
 			return "member/find1";
 		}
 		
-		
-		@RequestMapping("find_id")
-		public String findid() {
-			
-			return "member/find_id";
+
+		@RequestMapping(value = "/find_id")
+		public String find_id() throws Exception{
+			return "/member/find_id";
 		}
 		
 		

@@ -13,6 +13,5 @@ public interface MemberService {
 	//·Î±×ÀÎ
 	public MemberVO login(MemberVO vo) throws Exception;
 	
-	
-	
+
 }
