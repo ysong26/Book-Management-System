@@ -163,15 +163,7 @@ public class MemberController {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+////////////////////////아이디 비밀번호 찾기///////////////////////
 		@RequestMapping("find1")
 		public String find() {
 			
