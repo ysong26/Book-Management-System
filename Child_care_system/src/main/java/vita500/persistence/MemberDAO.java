@@ -15,4 +15,5 @@ public interface MemberDAO {
 	
 	public void delete(MemberVO vo) throws Exception; //È¸¿øÅ»Åð
 
+
 }

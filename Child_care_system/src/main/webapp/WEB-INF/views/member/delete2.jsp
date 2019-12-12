@@ -87,7 +87,7 @@
 	
 					<c:if test="${msg1 == false }">
 						<script>
-						alert("입력한 비밀번호가 잘 못 되었습니다.");
+						alert("비밀번호가 틀립니다.");
 						</script>
 					</c:if>
 	

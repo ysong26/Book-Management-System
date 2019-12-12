@@ -137,7 +137,7 @@ public class MemberController {
 		
 		
 		@RequestMapping(value = "/delete2", method = RequestMethod.GET)
-		public void delete2() throws Exception {
+		public void getdelete2() throws Exception {
 		 logger.info("get delete");
 		 
 		}
@@ -149,12 +149,13 @@ public class MemberController {
 		 MemberVO member = (MemberVO)session.getAttribute("member");
 		 
 		 String oldPW = member.getUser_PW();
-		 String newPW = vo.getUser_ID();
+		 String newPW = vo.getUser_PW();
 		     
 		 if(!(oldPW.equals(newPW))) {
 		  rttr.addFlashAttribute("msg1", false);
 		  return "redirect:/member/delete2";
 		 }
+		 
 		 service.delete(vo);
 		 session.invalidate();
 		 rttr.addFlashAttribute("msg1", true);
@@ -171,11 +172,15 @@ public class MemberController {
 		}
 		
 
-		@RequestMapping(value = "/find_id")
-		public String find_id() throws Exception{
-			return "/member/find_id";
+		//아이디 찾기
+		
+		@RequestMapping(value = "/find_id", method = RequestMethod.GET)
+		public void find_id() throws Exception {
+		 logger.info("get find id");
 		}
 		
+
+
 		
 		@RequestMapping("find_pw")
 		public String findpw() {

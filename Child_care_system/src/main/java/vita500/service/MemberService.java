@@ -18,4 +18,6 @@ public interface MemberService {
 	
 	//È¸¿ø Å»Åð
 	public void delete(MemberVO vo) throws Exception;
+	
+
 }

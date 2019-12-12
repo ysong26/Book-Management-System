@@ -38,6 +38,11 @@ public class MemberServiceImpl implements MemberService {
 		dao.delete(vo);
 		
 		}
-	}
+
+	
+	
+	
+	
+}
 
 
