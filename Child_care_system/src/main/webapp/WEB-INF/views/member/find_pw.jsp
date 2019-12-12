@@ -33,7 +33,7 @@
 		
 	<h3>비밀번호 찾기</h3>
 
-   <form role="form" method="post" onsubmit="return check();">
+   <form role="form" method="post">
         <table>
             <tr>
                 <td><b>[회원님의 아이디, 이름, 비밀번호, 이메일을 입력하세요.]</b></td>

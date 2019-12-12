@@ -33,25 +33,16 @@
 		
 	<h3>아이디 찾기</h3>
 
-   <form role="form" method="post" onsubmit="return check();">
+   <form role="form" method="post">
         <table>
             <tr>
-                <td><b>[회원가입 시 입력하셨던 이름, 이메일을 입력하세요.]</b></td>
+                <td><b>[회원가입 시 입력하셨던 이메일을 입력하세요.]</b></td>
             </tr>
         </table>    
         <table>
                  
 
            
-            <tr class="register" height="30">
-  
-                <td width="15%">이 름 (2~6 자리의 한글만 입력 가능합니다.)
-              <input type="text" name="User_Name" id="User_Name"style="text-align:center; width:150px; height:50px;"/></td>
-            </tr>
-
-            <tr height="7">
-                <td colspan="3"><hr /></td>
-            </tr>
             
             
             <tr class="register" height="30">
@@ -65,7 +56,8 @@
   	
         </table>
         <br />
-    <input type="submit"  class="btn-primary" id="confirmBtn" disabled="disabled" value="아이디 찾기">
+        
+    <input type="submit" value="아이디 찾기">
     <input type="button" class="btn-back" onclick="history.go(-1);" value="취소">
 
     
