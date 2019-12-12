@@ -15,7 +15,7 @@
  </select>
  
  <update id="update">
- 	UPDATE tbl_board SET title=#{title}, content=#{content} WHERE Board_No=#{Board_No}
+ 	UPDATE tbl_board SET Board_Subject=#{Board_Subject}, Board_Content=#{ Board_Content} WHERE Board_No=#{Board_No}
  </update>
  
  <delete id="delete">

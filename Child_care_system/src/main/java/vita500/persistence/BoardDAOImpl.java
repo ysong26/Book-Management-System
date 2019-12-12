@@ -35,6 +35,8 @@ public class BoardDAOImpl implements BoardDAO {
 		session.update(namespace+".update",vo);
 
 	}
+	
+	
 
 	@Override
 	public void delete(Integer board_No) throws Exception {

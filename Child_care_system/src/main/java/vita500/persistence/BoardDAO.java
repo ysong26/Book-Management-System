@@ -12,6 +12,7 @@ public interface BoardDAO {
 	public BoardVO read(Integer board_No) throws Exception;  //글 읽기
 	public void update(BoardVO vo) throws Exception;//글 업데이트
 	public void delete(Integer board_No) throws Exception;//글 삭제
+	
 	public List<BoardVO> listALL() throws Exception; //전체글 보기
 	public List<BoardVO> listCriteria(Criteria cri) throws Exception; //특정 페이지 목록 보기
 	public int countPaging(Criteria cri) throws Exception;//전체 개수 반환

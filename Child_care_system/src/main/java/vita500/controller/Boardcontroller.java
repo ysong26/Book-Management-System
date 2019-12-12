@@ -67,14 +67,33 @@ public class Boardcontroller {
 		 */
 		return "redirect:/board/Board";
 	}
-
+	
+	
+	
 	
 	@RequestMapping(value="/modify",method=RequestMethod.GET) //수정
 	public void modifyGET(@RequestParam("board_No") int board_No, Model model) throws Exception {
 		model.addAttribute(service.read(board_No));
 	}
 	
-	 
+	
+	@RequestMapping(value="/modify", method=RequestMethod.POST) //수정
+	public String modifyPOST(BoardVO board, RedirectAttributes rttr) throws Exception{
+		logger.info("수정요청");
+		logger.info("mod post....");
+		service.modify(board);
+		rttr.addFlashAttribute("result", "success"); //addFlashAttribute임시데이터라 한번만 뜸
+		/*
+		 * rttr.addAttribute("page",cri.getPage());
+		 * rttr.addAttribute("perPageNum",cri.getPerPageNum());
+		 */
+		return "redirect:/board/Board";
+	
+	}
+	
+	
+	
+	
 	@RequestMapping(value="/listPage",method=RequestMethod.GET)
 	public void listPage(Criteria cri, Model model) throws Exception{
 		logger.info("하단 페이지바 까지 보기 요청");
