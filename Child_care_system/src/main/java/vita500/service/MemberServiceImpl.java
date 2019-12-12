@@ -28,10 +28,16 @@ public class MemberServiceImpl implements MemberService {
 		return dao.login(vo);
 	}
 
+	@Override //ºñ¹Ð¹øÈ£ º¯°æ
+	public void modify(MemberVO vo) throws Exception {
+		dao.modify(vo);
+		}
 
-	
-	
-
+	@Override //È¸¿ø Å»Åð
+	public void delete(MemberVO vo) throws Exception {
+		dao.delete(vo);
+		
+		}
 	}
 
 

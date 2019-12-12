@@ -17,7 +17,7 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="/" id="logo">VITA <em>500</em></a></h1>
+						<h1><a href="/" id="logo"><font size="10">VITA <em>500</em></font></a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -47,7 +47,7 @@
 								<li>
 								<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;MyPage&nbsp;&nbsp;&nbsp;&nbsp;</a>
 									<ul>
-										<li><a href="/수정할곳.jsp">MyPage</a></li>
+										<li><a href="/member/Mypage">MyPage</a></li>
 									</ul>
 								</li>
 								

@@ -73,6 +73,19 @@
 						</script>
 					</c:if>
 
+					<c:if test="${msg1 == true }">
+						<script>
+						alert("그동안 Vita500을 이용해주셔서 감사합니다.");
+						</script>
+					</c:if>
+
+					<c:if test="${msg2 == false }">
+						<script>
+						alert("변경된 비밀번호로 다시 로그인 해주세요.");
+						</script>
+					</c:if>
+
+
 
 					<c:if test="${member != null }">
 						<h3>${member.user_Name}님 환영합니다!</h3>

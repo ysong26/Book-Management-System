@@ -74,7 +74,7 @@ public class Boardcontroller {
 		model.addAttribute(service.read(board_No));
 	}
 	
-	
+	 
 	@RequestMapping(value="/listPage",method=RequestMethod.GET)
 	public void listPage(Criteria cri, Model model) throws Exception{
 		logger.info("하단 페이지바 까지 보기 요청");

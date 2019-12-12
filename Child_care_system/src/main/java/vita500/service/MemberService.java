@@ -13,5 +13,9 @@ public interface MemberService {
 	//로그인
 	public MemberVO login(MemberVO vo) throws Exception;
 	
-
+	//비밀번호 변경
+	public void modify(MemberVO vo) throws Exception;
+	
+	//회원 탈퇴
+	public void delete(MemberVO vo) throws Exception;
 }
