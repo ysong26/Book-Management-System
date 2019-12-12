@@ -105,7 +105,28 @@ public class MemberController {
 			return "redirect:/";
 		}
 		
+		@RequestMapping("Mypage")
+		public String mypage() {
+			
+			return "member/Mypage";
+		}
+		
 	
+		@RequestMapping(value = "/modify_pw", method = RequestMethod.GET)
+		public void getModify() throws Exception{
+			logger.info("get modify PW");
+		}
+		
+		@RequestMapping(value = "/modify_pw", method = RequestMethod.POST)
+		public String postModify(HttpSession session, MemberVO vo) throws Exception {
+		 logger.info("post modify PW");
+		 
+		 service.modify(vo);
+		 session.invalidate(); //세션값삭제
+		 
+		 return "redirect:/";
+		}
+		
 		@RequestMapping("find1")
 		public String find() {
 			

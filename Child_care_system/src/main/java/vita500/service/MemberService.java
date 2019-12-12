@@ -13,5 +13,6 @@ public interface MemberService {
 	//로그인
 	public MemberVO login(MemberVO vo) throws Exception;
 	
-
+	//비밀번호 변경
+	public void modify(MemberVO vo) throws Exception;
 }

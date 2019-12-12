@@ -20,7 +20,7 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="/" id="logo">VITA <em>500</em></a></h1>
+					<h1><a href="/" id="logo"><font size="10">VITA <em>500</em></font></a></h1>
 
 			</div>
 	</div>				

@@ -30,6 +30,11 @@ public class MemberDAOImpl implements MemberDAO {
 		return session.selectOne(namespace+ ".login", vo);
 	}
 
+	@Override //비밀번호 수정
+	public void modify(MemberVO vo) throws Exception {
+		session.update(namespace + ".modify", vo);
+	}
+
 
 
 

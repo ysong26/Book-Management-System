@@ -21,6 +21,11 @@
 	SELECT User_ID, User_Name FROM tbl_user WHERE User_ID = #{User_ID} AND User_PW = #{User_PW}
 </select>
 
+   <!-- 비밀번호 수정 --> 
+ <update id="modify"> 
+ 	update tbl_user SET User_PW = #{User_PW} where User_ID = #{User_ID}
+ </update> 
+
 
     <!-- 아이디 찾기 --> 
  <select id="findid" resultType="vita500.domain.MemberVO"> 
