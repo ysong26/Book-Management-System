@@ -40,7 +40,7 @@ public class MemberDAOImpl implements MemberDAO {
 		session.delete(namespace + ".delete", vo);
 		}
 
-
+ 
 	  }
 
 
