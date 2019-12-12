@@ -24,21 +24,21 @@
 
 		<div class="form-group">
 			<label for="exampleInputEmail1">글번호</label> <input type="text"
-				name='bno' class="form-control" value="${boardVO.board_No}"
+				name='Board_No' class="form-control" value="${boardVO.board_No}"
 				readonly="readonly"> <!-- 글 번호 수정불가 -->
 		</div>
 
 		<div class="form-group">
 			<label for="exampleInputEmail1">제목</label> <input type="text"
-				name='title' class="form-control" value="${boardVO.board_Subject}">
+				name='Board_Subject' class="form-control" value="${boardVO.board_Subject}">
 		</div>
 		<div class="form-group">
 			<label for="exampleInputPassword1">내용</label>
-			<textarea class="form-control" name="content" rows="3">${boardVO.board_Content}</textarea>
+			<textarea class="form-control" name="Board_Content" rows="3">${boardVO.board_Content}</textarea>
 		</div>
 		<div class="form-group">
 			<label for="exampleInputEmail1">작성자</label> <input
-				type="text" name="writer" class="form-control"
+				type="text" name="User_ID" class="form-control"
 				value="${boardVO.user_ID}"
 				readonly="readonly"> <!-- 작성자 수정불가 -->
 		</div>
@@ -60,8 +60,9 @@
 		console.log(formObj);
 
 		$(".btn-warning").on("click", function() {
-			self.location = "/board/listPage";
+			self.location = "/board/Board";
 		});
+		
 
 		$(".btn-primary").on("click", function() {
 			formObj.submit();
