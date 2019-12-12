@@ -7,12 +7,6 @@
 
 
 
-
-    
-<script src="//code.jquery.com/jquery-3.3.1.min.js"></script> 
-  
-
-
 <section class="content">
 	<div class="row">
 		<!-- left column -->
@@ -25,39 +19,42 @@
 				<!-- /.box-header -->
 
 <form role="form" method="post">
-	<input type="hidden" name="bno" value="65539">
-	<input type="hidden" name="page" value="1">
-	<input type="hidden" name="perPageNum" value="10">
+	<input type='hidden' name='board_No' value="${boardVO.board_No}">
 </form>	
 
 <div class="box-body">
 	<div class="form-group">
 		<label for="exampleInputEmail1">제목</label> <input type="text"
-			name='title' class="form-control" value="123"
+			name='Board_Subject' class="form-control" value="${boardVO.board_Subject}"
 			readonly="readonly">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputPassword1">내용</label>
-		<textarea class="form-control" name="content" rows="3"
-			readonly="readonly">456</textarea>
+		<textarea class="form-control" name="Board_Content" rows="3"
+			readonly="readonly">${boardVO.board_Content}</textarea>
 	</div>
 	<div class="form-group">
 		<label for="exampleInputEmail1">작성자</label> <input type="text"
-			name="writer" class="form-control" value="777"
+			name="User_ID" class="form-control" value="${boardVO.user_ID}"
 			readonly="readonly">
 	</div>
 </div>
 
+
 <div class="box-footer">
 	<button type="submit" class="btn btn-warning">수정</button>
 	<button type="submit" class="btn btn-danger">삭제</button>
-	<button type="submit" class="btn btn-primary">목록</button>
+	<button type="submit" class="btn btn-primary">전체목록</button>
 </div>
+
+
 
 <script>
 	$(document).ready(function(){
 		var formObj = $("form[role='form']");
 		console.log(formObj);
+		
+		
 		
 		$(".btn-warning").on("click",function(){
 			formObj.attr("action","/board/modify");
@@ -65,16 +62,19 @@
 			formObj.submit();
 		});	
 		
+		
 		$(".btn-danger").on("click",function(){
 			formObj.attr("action","/board/remove");
 			formObj.submit();
 		});	
 		
+		
+		
 		$(".btn-primary").on("click",function(){
-			formObj.attr("method", "get");
-			formObj.attr("action", "/board/listPage");
-		formObj.submit();
+			self.location="/board/Board"
 		});	
+		
+
 	
 	});
 </script>
@@ -83,7 +83,6 @@
 	</div>
 </section>
 	
-
 
 
  <%@include file="../footer.jsp"%>

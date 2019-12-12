@@ -5,69 +5,46 @@
 <%@ page session="false"%>
 
 
-
-<!-- Main content -->
-<section class="content">
-	<div class="row">
-		<!-- left column -->
-		<div class="col-md-12">
-			<!-- general form elements -->
-
-			<div class="box">
-				<div class="box-header with-border">
-					<h3 class="box-title">전체 게시글</h3>
-				</div>
-				<div class="box-body">
-				
 <table class="table table-bordered">
+
+  <br>
+    <div id="board">
+        <table id="bList" width="800" border="3" bordercolor="lightgray">
+            <tr heigh="30">
+                <td>글번호</td>
+                <td>제목</td>
+                <td>작성자</td>
+                <td>작성일</td>
+                <td>조회수</td>
+            </tr>
+            
+            	</tr>
+	<c:forEach items="${list}" var="data">	
 	<tr>
-		<th style="width: 10px">글번호</th>
-		<th>제목</th>
-		<th>작성자</th>
-		<th>작성일</th>
-		<th style="width: 40px">조회수</th>
-	</tr>
-
-
-<c:forEach items="${list}" var="boardVO">
-
-	<tr>
-		<td>${boardVO.Board_No}</td>
-		<td><a href='/board/read?Board_No=${boardVO.Board_No}'>${boardVO.title}</a></td>
-		<td>${boardVO.writer}</td>
-		<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm"
-				value="${boardVO.regdate}" /></td>
-		<td><span class="badge bg-red">${boardVO.viewcnt }</span></td>
-	</tr>
-
-</c:forEach>
-
+	
+		<td style="width: 10px">${data.board_No}</td>
+			<td><a href ="detail?board_No=${data.board_No}">${data.board_Subject}</a></td>
+			<td>${data.user_ID}</td>
+			<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${data.board_DateTime}"/></td>
+			<td><span class="badge bg-red">${data.board_Cnt}</span></td>
+		</tr>
+	</c:forEach>
+		
 </table>
 
-				</div>
-				<!-- /.box-body -->
-				<div class="box-footer">Footer</div>
-				<!-- /.box-footer-->
-			</div>
-		</div>
-		<!--/.col (left) -->
-
-	</div>
-	<!-- /.row -->
-</section>
-<!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
-
 <script>
+var result ='${result}'
+if(result=='success'){
+	alert("글이 등록되었습니다.");
+}
+
+var msg ='${msg}'
+if(msg=='success'){
+	alert("글 삭제가 정상적으로 처리되었습니다.");
+}
+
+</script>
+
     
-    var result = '${msg}';
     
-    if(result == 'SUCCESS'){
-    	alert("처리가 완료되었습니다.");
-    }
-    
-    </script>
-    
-    
-    
+    <%@include file="../footer.jsp"%>

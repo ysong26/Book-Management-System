@@ -23,8 +23,8 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public BoardVO read(Integer bno) throws Exception {
-		return dao.read(bno);
+	public BoardVO read(Integer board_No) throws Exception {
+		return dao.read(board_No);
 	}
 
 	@Override
@@ -33,8 +33,8 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public void remove(Integer bno) throws Exception {
-		dao.delete(bno);
+	public void remove(Integer board_No) throws Exception {
+		dao.delete(board_No);
 	}
 
 	@Override

@@ -19,7 +19,7 @@
                 <td>조회수</td>
             </tr>
             
-            	</tr>
+            	
 	<c:forEach items="${list}" var="data">	
 	<tr>
 	
@@ -31,38 +31,14 @@
 		</tr>
 	</c:forEach>
 		
-		
-		
-					
-		
-		
 
         </table>
    </div>
         <p> <p align="right"><input type="submit"  class="" onclick="location.href='/board/pan'" value="글쓰기"></p>
-</table>
 
 
 
-<div class="text-center">
-<ul class ="pagination">
 
-<c:if test="${pageMaker.prev}">
-	<li><a href="listPage${pageMaker.makeQuery(1)}">&laquo;&laquo;</a></li>
-	<li><a href="listPage?page=${pageMaker.startpage-1}">&laquo;</a></li>
-</c:if>
-
-<c:forEach begin="${pageMaker.startpage}" end="${pageMaker.endpage}" var="idx">
-<li
- <c:out value="${pageMaker.cri.page == idx?'class =active':''}"/>>
- <a href="listPage${pageMaker.makeQuery(idx)}"> ${idx} &nbsp;&nbsp;</a>
- </li>
-</c:forEach>
-
-<c:if test="${pageMaker.next}">
-	<li><a href="listPage?page=${pageMaker.endpage+1}">&raquo;</a></li>
-	<li><a href="listPage${pageMaker.makeQuery(pageMaker.tempEndPage)}">&raquo;&raquo;</a></li>
-</c:if>
 
 </body>
 </html>
@@ -83,7 +59,7 @@
              <br><input type="submit" value="검색"/>
         </form>    
     </div>
-</div>    
+
  
 
 
