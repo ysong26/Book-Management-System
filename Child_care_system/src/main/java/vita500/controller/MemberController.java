@@ -21,7 +21,6 @@ import vita500.service.MemberService;
 @Controller
 @RequestMapping("/member/*")
 public class MemberController {
- 
 	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 	
 	@Inject
@@ -118,14 +117,60 @@ public class MemberController {
 		}
 		
 		@RequestMapping(value = "/modify_pw", method = RequestMethod.POST)
-		public String postModify(HttpSession session, MemberVO vo) throws Exception {
+		public String postModify(HttpSession session, MemberVO vo, RedirectAttributes rttr) throws Exception {
 		 logger.info("post modify PW");
 		 
 		 service.modify(vo);
 		 session.invalidate(); //세션값삭제
-		 
+		 rttr.addFlashAttribute("msg2", false);
 		 return "redirect:/";
 		}
+		
+		
+		
+		@RequestMapping("delete1")
+		public String delete1() {
+			
+			return "member/delete1";
+		}
+		
+		
+		
+		@RequestMapping(value = "/delete2", method = RequestMethod.GET)
+		public void delete2() throws Exception {
+		 logger.info("get delete");
+		 
+		}
+		
+		@RequestMapping(value = "/delete2", method = RequestMethod.POST)
+		public String postWithdrawal(HttpSession session, MemberVO vo, RedirectAttributes rttr) throws Exception {
+		 logger.info("post ");
+		 
+		 MemberVO member = (MemberVO)session.getAttribute("member");
+		 
+		 String oldPW = member.getUser_PW();
+		 String newPW = vo.getUser_ID();
+		     
+		 if(!(oldPW.equals(newPW))) {
+		  rttr.addFlashAttribute("msg1", false);
+		  return "redirect:/member/delete2";
+		 }
+		 service.delete(vo);
+		 session.invalidate();
+		 rttr.addFlashAttribute("msg1", true);
+		 return "redirect:/";
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		@RequestMapping("find1")
 		public String find() {

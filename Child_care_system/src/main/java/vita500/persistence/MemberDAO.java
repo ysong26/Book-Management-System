@@ -12,5 +12,7 @@ public interface MemberDAO {
 	public MemberVO login(MemberVO vo) throws Exception; //로그인
 	
 	public void modify(MemberVO vo) throws Exception; //비밀번호 수정
+	
+	public void delete(MemberVO vo) throws Exception; //회원탈퇴
 
 }

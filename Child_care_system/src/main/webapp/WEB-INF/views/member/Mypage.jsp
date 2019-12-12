@@ -7,8 +7,10 @@
 	<br><br><br>
 	<center>
 		<font size="25">MyPage</font><br><br><br>
-		이름:XXX<br>
-		이메일:XXX<br><br>
+		아이디:${member.user_ID}<br>
+		이름:${member.user_Name}<br>
+		휴대번호:${member.user_CPN}<br>
+		이메일:${member.user_Email}<br><br>
 		
 		
 		<h3>＊개인정보 변경＊</h3>
@@ -18,7 +20,7 @@
 		
 
 		<h3>＊회원탈퇴＊</h3>
-		회원탈퇴&emsp;&emsp;<a href="#">탈퇴하기</a><br>
+		회원탈퇴&emsp;&emsp;<a href="/member/delete1">탈퇴하기</a><br>
 		<br><br><br><br>
 		<input type="submit" onclick="location.href='/'" value="메인으로">
 	</center>

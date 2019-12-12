@@ -31,15 +31,15 @@
 							
 <section class="off-4 col-12" >
 		
-	<h3>비밀번호 변경</h3>
+	<h3>회원탈퇴(개인정보 확인)</h3>
 
-   <form role="form" method="post" autocomplete="off" onsubmit="return checkpw();">
+   <form role="form" method="post" autocomplete="off">
   
   
         <table>
-            <tr class="register" height="30">
+            <tr class="delete" height="30">
                 <td width="15%">아이디 
-              <input type="text" id="User_ID" name="User_ID" value="${member.user_ID}" style="text-align:center; width:150px; height:50px;" readonly/></td>
+              <input type="text" id="User_ID" name="User_ID" value="${member.user_ID}" style="text-align:center; width:150px; height:50px;"readonly/></td>
             </tr>
 
             <tr height="7">
@@ -47,11 +47,10 @@
             </tr>
             
             
-            <tr class="register" height="30">
+            <tr class="delete" height="30">
  
-                <td width="15%">새로운 패스워드<br>
-                (영문 대소문자, 숫자, 특수문자를 하나이상 포함해 5~20 사이로 입력 가능합니다.)
-                <input type="password" id="User_PW"  name="User_PW" style="text-align:center; width:250px; height:50px;" /></td>
+                <td width="15%">패스워드
+              <input type="password" id="User_PW" name="User_PW" style="text-align:center; width:150px; height:50px;"/></td>
             </tr>
             <tr height="7">
                 <td colspan="3"><hr /></td>
@@ -59,10 +58,10 @@
   	
         </table>
         <br />
-    <input type="submit" id="modify"value="비밀번호 수정">
-    <input type="button" class="btn-back" onclick="history.go(-1);" value="취소">
+        
+    <input type="submit" onclick="location.href='/'" value="취소">
+    <input type="submit" id="delete" value="회원탈퇴">
 
-    
     </form>
 
 			</section>
@@ -73,7 +72,9 @@
 	</body>
 	
 	</html>
-	<script>
+
+	
+		<script>
 	window.onload = function() {
 		var e = document.forms;
 			for(i=0; i<e.length; i++){
@@ -84,39 +85,11 @@
 				}
 	</script>
 	
-	
- <script>
-
-  var text = "";
-
-  function checkpw() {
- 
-      var User_PW = document.getElementById("User_PW");
-
- 	  // 정규식
-      var pwPattern = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{5,20}$/;
-
-      
-      
-      // 패스워드
-      if(pwPattern.test(User_PW.value) == true){
- 
-        }else {
-    	  alert("비밀번호 양식에 맞춰주세요.");
-    	  return false;
-      }
-      
-      
-    // 클리어
-    function inputClear() {
-      document.getElementById("SingUp").reset();
-    }
-  }
-  </script>
-
-	
-	
-	
+					<c:if test="${msg1 == false }">
+						<script>
+						alert("입력한 비밀번호가 잘 못 되었습니다.");
+						</script>
+					</c:if>
 	
 		
 	<%@include file="../footer.jsp"%>

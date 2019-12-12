@@ -35,6 +35,11 @@ public class MemberDAOImpl implements MemberDAO {
 		session.update(namespace + ".modify", vo);
 	}
 
+	@Override //È¸¿øÅ»Åð
+	public void delete(MemberVO vo) throws Exception {
+		session.delete(namespace + ".delete", vo);
+	}
+
 
 
 
