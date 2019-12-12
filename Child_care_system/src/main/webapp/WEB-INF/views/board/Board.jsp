@@ -5,18 +5,19 @@
 <%@include file="../header.jsp"%>
 			
 			
-			
+
 			<!-- 게시판 만드는곳 -->
  <!-- 게시글 목록 부분 -->
     <br>
     <div id="board">
+
         <table id="bList" width="800" border="3" bordercolor="lightgray">
             <tr heigh="30">
                 <td>글번호</td>
                 <td>제목</td>
                 <td>작성자</td>
                 <td>작성일</td>
-                <td>조회수</td>
+
             </tr>
             
             	
@@ -27,12 +28,13 @@
 			<td><a href ="detail?board_No=${data.board_No}">${data.board_Subject}</a></td>
 			<td>${data.user_ID}</td>
 			<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${data.board_DateTime}"/></td>
-			<td><span class="badge bg-red">${data.board_Cnt}</span></td>
+
 		</tr>
 	</c:forEach>
 		
 
         </table>
+	
    </div>
         <p> <p align="right"><input type="submit"  class="" onclick="location.href='/board/pan'" value="글쓰기"></p>
 
@@ -43,22 +45,7 @@
 </body>
 </html>
 
-  <!--  검색 부분 -->
-    <br>
-    <div id="searchForm">
-        <form>
-            <select name="opt">
-                <option value="0">제목</option>
-                <option value="1">내용</option>
-                <option value="2">제목+내용</option>
-                <option value="3">글쓴이</option>
-            </select>
-            <br>
-            <input type="text" style="text-align:center; width:800px; height:50px; name="condition"/>&nbsp;
-            
-             <br><input type="submit" value="검색"/>
-        </form>    
-    </div>
+ 
 
  
 

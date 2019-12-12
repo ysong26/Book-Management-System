@@ -6,8 +6,8 @@
 <mapper namespace="vita500.mapper.BoardMapper">
  
  <insert id="create">
-	 INSERT INTO tbl_board (title, content, writer) 
-	VALUES(#{title},#{content},#{writer})
+	 INSERT INTO tbl_board (Board_Subject, Board_Content, User_ID) 
+	VALUES(#{Board_Subject},#{Board_Content},#{User_ID})
  </insert>
  
  <select id="read" resultType="BoardVO">

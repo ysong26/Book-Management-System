@@ -47,6 +47,16 @@ public class Boardcontroller {
 	
         }
 	
+	@RequestMapping(value="/pan",method=RequestMethod.POST)
+	public String registerPOST(BoardVO board, RedirectAttributes rttr) throws Exception {
+		logger.info("글등록 요청(POST)...............");
+		logger.info(board.toString());
+		service.regist(board);
+//		rttr.addFlashAttribute("result", "success");
+		return "redirect:/board/Board";
+	}
+	
+	
 	@RequestMapping(value="/detail",method=RequestMethod.GET)
 	public void read(@RequestParam("board_No") int board_No, Model model) throws Exception {
 		model.addAttribute(service.read(board_No));

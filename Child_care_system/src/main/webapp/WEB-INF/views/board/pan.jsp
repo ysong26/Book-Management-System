@@ -36,7 +36,7 @@ function writeCheck()
  </head>
  <body>
 <table>
-<form name=writeform method=post action="write_ok.jsp">
+
   <tr>
    <td>
     <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -46,36 +46,49 @@ function writeCheck()
       <td width="5"><img src="img/table_right.gif" width="5" height="30" /></td>
      </tr>
     </table>
+    
+ <form role="form" method="post">
    <table>
      <tr>
       <td>&nbsp;</td>
       <td align="center">제목</td>
-      <td><input name="title" size="50" maxlength="100"></td>
+      <td><input name="Board_Subject" size="50" maxlength="100"></td>
       <td>&nbsp;</td>
      </tr>
      <tr height="1" bgcolor="#dddddd"><td colspan="4"></td></tr>
    
+       <tr>
+      <td>&nbsp;</td>
+      <td align="center">작성자</td>
+      <td><input name="User_ID" size="50" maxlength="100"></td>
+      <td>&nbsp;</td>
      </tr>
+   
+   
      <tr height="1" bgcolor="#dddddd"><td colspan="4"></td></tr>
      <tr>
       <td>&nbsp;</td>
       <td align="center">내용</td>
-      <td><textarea name="memo" cols="50" rows="13"></textarea></td>
+      <td><textarea name="Board_Content" cols="50" rows="13"></textarea></td>
       <td>&nbsp;</td>
      </tr>
      <tr height="1" bgcolor="#dddddd"><td colspan="4"></td></tr>
      <tr height="1" bgcolor="#82B5DF"><td colspan="4"></td></tr>
      <tr align="center">
       <td>&nbsp;</td>
-      <td colspan="2"><input type=button value="등록" OnClick="javascript:writeCheck();">
-       <input type=button value="취소" OnClick="javascript:history.back(-1)">
+      		
+      <td colspan="2"><input type="submit" value="글 등록" />
+       <input type=submit value="취소" OnClick="javascript:history.back(-1)">
       <td>&nbsp;</td>
      </tr>
     </table>
+ </form>
    </td>
+ 
   </tr>
-  </form>
+
  </table>
+ 
 </body>
  </html>
  
