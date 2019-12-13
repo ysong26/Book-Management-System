@@ -9,8 +9,8 @@
 			<!-- 게시판 만드는곳 -->
  <!-- 게시글 목록 부분 -->
     <br>
+    
     <div id="board">
-
         <table id="bList" width="800" border="3" bordercolor="lightgray">
             <tr heigh="30">
                 <td>글번호</td>

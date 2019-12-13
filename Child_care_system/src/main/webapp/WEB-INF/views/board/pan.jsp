@@ -35,6 +35,7 @@ function writeCheck()
  <title>게시판</title>
  </head>
  <body>
+ 
 <table>
 
   <tr>
@@ -77,12 +78,15 @@ function writeCheck()
      <tr align="center">
       <td>&nbsp;</td>
       		
-      <td colspan="2"><input type="submit" value="글 등록" />
-       <input type=submit value="취소" OnClick="javascript:history.back(-1)">
+      <td colspan="2">
+      
+      <input type="submit" value="글 등록" />
+       <input type="button" onclick="location.href='/'" value="취소" >
       <td>&nbsp;</td>
      </tr>
     </table>
  </form>
+ 
    </td>
  
   </tr>
