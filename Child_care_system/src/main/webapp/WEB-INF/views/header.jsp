@@ -31,7 +31,7 @@
 								<li>
 									<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Time&nbsp;&nbsp;&nbsp;&nbsp;</a>
 									<ul>
-										<li><a href="/수정할곳.jsp">My Kids</a></li>
+										<li><a href="#">My Kids</a></li>
 									
 									</ul>
 								</li>
